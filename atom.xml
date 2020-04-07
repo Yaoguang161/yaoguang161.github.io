@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-07T06:22:18.615Z</updated>
+  <updated>2020-04-07T11:55:44.743Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>划水，不知道写啥</title>
+    <link href="http://yoursite.com/2020/04/07/%E5%88%92%E6%B0%B4%EF%BC%8C%E4%B8%8D%E7%9F%A5%E9%81%93%E5%86%99%E5%95%A5/"/>
+    <id>http://yoursite.com/2020/04/07/%E5%88%92%E6%B0%B4%EF%BC%8C%E4%B8%8D%E7%9F%A5%E9%81%93%E5%86%99%E5%95%A5/</id>
+    <published>2020-04-07T11:54:21.000Z</published>
+    <updated>2020-04-07T11:55:44.743Z</updated>
+    
+    <content type="html"><![CDATA[<p>```今天我的博客又又坏掉了！！！！</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;```今天我的博客又又坏掉了！！！！&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+      <category term="日常水博客" scheme="http://yoursite.com/tags/%E6%97%A5%E5%B8%B8%E6%B0%B4%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
   
   <entry>
     <title>gg</title>
