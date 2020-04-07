@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-07T11:55:44.743Z</updated>
+  <updated>2020-04-07T12:07:36.676Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于ssh密钥重启后无法保存的问题尝试</title>
+    <link href="http://yoursite.com/2020/04/07/%E5%85%B3%E4%BA%8Essh%E5%AF%86%E9%92%A5%E9%87%8D%E5%90%AF%E5%90%8E%E6%97%A0%E6%B3%95%E4%BF%9D%E5%AD%98%E7%9A%84%E9%97%AE%E9%A2%98%E5%B0%9D%E8%AF%95/"/>
+    <id>http://yoursite.com/2020/04/07/%E5%85%B3%E4%BA%8Essh%E5%AF%86%E9%92%A5%E9%87%8D%E5%90%AF%E5%90%8E%E6%97%A0%E6%B3%95%E4%BF%9D%E5%AD%98%E7%9A%84%E9%97%AE%E9%A2%98%E5%B0%9D%E8%AF%95/</id>
+    <published>2020-04-07T12:07:36.000Z</published>
+    <updated>2020-04-07T12:07:36.676Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>划水，不知道写啥</title>
