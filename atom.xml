@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-08T02:02:25.930Z</updated>
+  <updated>2020-04-08T02:29:29.911Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CNAMEe文件会被覆盖的问题</title>
+    <link href="http://yoursite.com/2020/04/08/CNAMEe%E6%96%87%E4%BB%B6%E4%BC%9A%E8%A2%AB%E8%A6%86%E7%9B%96%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <id>http://yoursite.com/2020/04/08/CNAMEe%E6%96%87%E4%BB%B6%E4%BC%9A%E8%A2%AB%E8%A6%86%E7%9B%96%E7%9A%84%E9%97%AE%E9%A2%98/</id>
+    <published>2020-04-08T02:29:29.000Z</published>
+    <updated>2020-04-08T02:29:29.911Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>哗哗哗</title>
