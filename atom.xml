@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-08T07:11:02.491Z</updated>
+  <updated>2020-04-08T07:37:36.621Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>谷歌真是好东西</title>
+    <link href="http://yoursite.com/2020/04/08/%E8%B0%B7%E6%AD%8C%E7%9C%9F%E6%98%AF%E5%A5%BD%E4%B8%9C%E8%A5%BF/"/>
+    <id>http://yoursite.com/2020/04/08/%E8%B0%B7%E6%AD%8C%E7%9C%9F%E6%98%AF%E5%A5%BD%E4%B8%9C%E8%A5%BF/</id>
+    <published>2020-04-08T07:37:36.000Z</published>
+    <updated>2020-04-08T07:37:36.621Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>gg</title>
