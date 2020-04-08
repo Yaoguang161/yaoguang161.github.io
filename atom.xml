@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-08T02:29:29.911Z</updated>
+  <updated>2020-04-08T03:12:30.799Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>用来弄个博客就知道win10是多么辣鸡了</title>
+    <link href="http://yoursite.com/2020/04/08/%E7%94%A8%E6%9D%A5%E5%BC%84%E4%B8%AA%E5%8D%9A%E5%AE%A2%E5%B0%B1%E7%9F%A5%E9%81%93win10%E6%98%AF%E5%A4%9A%E4%B9%88%E8%BE%A3%E9%B8%A1%E4%BA%86/"/>
+    <id>http://yoursite.com/2020/04/08/%E7%94%A8%E6%9D%A5%E5%BC%84%E4%B8%AA%E5%8D%9A%E5%AE%A2%E5%B0%B1%E7%9F%A5%E9%81%93win10%E6%98%AF%E5%A4%9A%E4%B9%88%E8%BE%A3%E9%B8%A1%E4%BA%86/</id>
+    <published>2020-04-08T03:12:30.000Z</published>
+    <updated>2020-04-08T03:12:30.799Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>CNAMEe文件会被覆盖的问题</title>
