@@ -1,20 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>昨日繁星</title>
+  <title>���շ���</title>
   
   
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://isk.ink/"/>
-  <updated>2020-04-08T07:37:36.621Z</updated>
+  <updated>2020-04-20T11:00:32.037Z</updated>
   <id>http://isk.ink/</id>
   
   <author>
-    <name>Asaki超可爱</name>
+    <name>Asaki���ɰ�</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我啥都没写</title>
+    <link href="http://isk.ink/2020/04/20/%E6%88%91%E5%95%A5%E9%83%BD%E6%B2%A1%E5%86%99/"/>
+    <id>http://isk.ink/2020/04/20/%E6%88%91%E5%95%A5%E9%83%BD%E6%B2%A1%E5%86%99/</id>
+    <published>2020-04-20T11:00:32.000Z</published>
+    <updated>2020-04-20T11:00:32.037Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>谷歌真是好东西</title>
