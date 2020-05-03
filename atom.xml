@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://isk.ink/"/>
-  <updated>2020-05-03T04:54:05.291Z</updated>
+  <updated>2020-05-03T10:00:14.379Z</updated>
   <id>http://isk.ink/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Typora携GicGo建立图床</title>
+    <title>Typora携PicGo建立图床</title>
     <link href="http://isk.ink/2020/05/03/Typora%E6%90%BAGicGo%E5%BB%BA%E7%AB%8B%E5%9B%BE%E5%BA%8A/"/>
     <id>http://isk.ink/2020/05/03/Typora%E6%90%BAGicGo%E5%BB%BA%E7%AB%8B%E5%9B%BE%E5%BA%8A/</id>
     <published>2020-05-03T03:56:50.000Z</published>
-    <updated>2020-05-03T04:54:05.291Z</updated>
+    <updated>2020-05-03T10:00:14.379Z</updated>
     
     <content type="html"><![CDATA[<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200503125344.jpeg"  alt="1572565289194"></p>]]></content>
     
