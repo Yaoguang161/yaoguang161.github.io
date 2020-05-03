@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://isk.ink/"/>
-  <updated>2020-05-03T03:09:07.471Z</updated>
+  <updated>2020-05-03T04:54:05.291Z</updated>
   <id>http://isk.ink/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Typora携GicGo建立图床</title>
+    <link href="http://isk.ink/2020/05/03/Typora%E6%90%BAGicGo%E5%BB%BA%E7%AB%8B%E5%9B%BE%E5%BA%8A/"/>
+    <id>http://isk.ink/2020/05/03/Typora%E6%90%BAGicGo%E5%BB%BA%E7%AB%8B%E5%9B%BE%E5%BA%8A/</id>
+    <published>2020-05-03T03:56:50.000Z</published>
+    <updated>2020-05-03T04:54:05.291Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200503125344.jpeg"  alt="1572565289194"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;图片&quot;&gt;&lt;a href=&quot;#图片&quot; class=&quot;headerlink&quot; title=&quot;图片&quot;&gt;&lt;/a&gt;图片&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/&quot; class=&quot;lazyload&quot; data-src=&quot;https://cdn.jsdelivr.net/gh/Ya
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>图床加Typora尝试</title>
     <link href="http://isk.ink/2020/05/03/%E5%9B%BE%E5%BA%8A%E5%8A%A0Typora%E5%B0%9D%E8%AF%95/"/>
     <id>http://isk.ink/2020/05/03/%E5%9B%BE%E5%BA%8A%E5%8A%A0Typora%E5%B0%9D%E8%AF%95/</id>
     <published>2020-05-03T03:06:12.000Z</published>
-    <updated>2020-05-03T03:09:07.471Z</updated>
+    <updated>2020-05-03T04:50:35.485Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/" class="lazyload" data-src="https://github.com/Yaoguang161/image/blob/master/wenzhangbeijing.jpg?raw=true"  alt=""></p>]]></content>
     
