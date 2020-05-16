@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://isk.ink/"/>
-  <updated>2020-05-16T04:50:15.441Z</updated>
+  <updated>2020-05-16T07:00:59.635Z</updated>
   <id>http://isk.ink/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>博客搭建——踩坑</title>
+    <title>【生活】泡茶的技巧</title>
+    <link href="http://isk.ink/2020/05/16/%E8%8C%B6/"/>
+    <id>http://isk.ink/2020/05/16/%E8%8C%B6/</id>
+    <published>2020-05-16T06:20:59.000Z</published>
+    <updated>2020-05-16T07:00:59.635Z</updated>
+    
+    <content type="html"><![CDATA[<p>  在twitter上看到的日本网友分享的泡茶方法：</p><p>​      在小茶壶中放入茶叶和冰块（冰块代替水），放入冰箱冷藏一晚（注意不是冷冻）</p><p>这样泡出来的茶非常好喝，你能够100%感受到茶叶的甜味。泡茶的水越烫，</p><p>茶叶就越苦，按这种方法泡的茶味道很浓而且澄澈好喝。</p><p><strong>扩展一下</strong></p><p>抹茶粉也是同样的方法，不过冷藏后需要搅拌一下，毕竟抹茶粉沉底了。</p><p>这里贴一下我在宿舍自己做抹茶的配方   <!--外面卖的太贵，味道还没我自己做的好喝--></p><p>产考量 ：500ml一杯</p><p><strong>糖浆：</strong></p><p>水                                          50克</p><p>白砂糖                                   75克</p><p><strong>抹茶液：</strong>                </p><p>抹茶粉                                   9克</p><p>糖浆                                      45克</p><p>水                                            220克</p><p><del>然后就没了？？？？？</del><u>人家也不想吗，可是没办法，我就是数学差嘛</u></p><p>9+45+220=<del>264</del>   好像是274，不重要啦</p><p>剩下的236克可以加牛奶或者咖啡，作为狼灭的我，加过红酒和啤酒，妈的绝了，差点把我送走。</p><p>来个简化版，抹茶粉加水加糖，味道看运气。其实还不错。    </p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;  在twitter上看到的日本网友分享的泡茶方法：&lt;/p&gt;
+&lt;p&gt;​      在小茶壶中放入茶叶和冰块（冰块代替水），放入冰箱冷藏一晚（注意不是冷冻）&lt;/p&gt;
+&lt;p&gt;这样泡出来的茶非常好喝，你能够100%感受到茶叶的甜味。泡茶的水越烫，&lt;/p&gt;
+&lt;p&gt;茶叶就越苦，按这种
+      
+    
+    </summary>
+    
+    
+    
+      <category term="生活，茶" scheme="http://isk.ink/tags/%E7%94%9F%E6%B4%BB%EF%BC%8C%E8%8C%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【博客】 博客搭建——踩坑</title>
     <link href="http://isk.ink/2020/05/16/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E2%80%94%E2%80%94%E8%B8%A9%E5%9D%91/"/>
     <id>http://isk.ink/2020/05/16/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E2%80%94%E2%80%94%E8%B8%A9%E5%9D%91/</id>
     <published>2020-05-15T16:36:08.000Z</published>
-    <updated>2020-05-16T04:50:15.441Z</updated>
+    <updated>2020-05-16T06:19:52.413Z</updated>
     
     <content type="html"><![CDATA[<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p>1.下载 node.js (windows)  <!--windows安装完可能要重启电脑--></p><p>2.下载git并配置环境我参考的是CSDN大佬<a href="https://blog.csdn.net/huangqqdy/article/details/83032408?utm_source=app" target="_blank" rel="noopener">https://blog.csdn.net/huangqqdy/article/details/83032408?utm_source=app</a></p><p>3.linux系统需要进入root（管理员权限）</p><p>windows系统进入命令窗口（cmd）<!--管理员权限-->，然后输入“<code>node  -v</code>”查看版本，接着<code>npm  -v</code>看版本      <!--其实这一些版本查看也可以省略--></p><p>4.（在命令窗口）下载镜像源，借用淘宝的镜像源，中国有互联网局域网限制下载外国的东西会很慢，有的比百度云都慢（不是我黑百度云）在命令窗口中输入<code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code></p><p>5.（在命令窗口）输入命令框中输入<code>cnpm</code>查看效果，接着<code>cnpm -v</code>查看版本</p><p>6.下载文档编辑器。个人推荐Typora，功能不错，注意下载时生成鼠标右键快捷方式。</p><h2 id="下载博客框架"><a href="#下载博客框架" class="headerlink" title="下载博客框架"></a>下载博客框架</h2><p>1.我所采用的是hexo博客框架，个人没用过wordpress框架，当然你也可以选择，还有很多看自己喜欢</p><p>（在命令窗口）输入<code>cnpm install -g hexo-cli</code>等待下载，下载完后输入hexo -v查看版本</p><p>2.新建立新文件夹命名blog（windows直接右键添加），个人建议建在C盘用户目录下，其实不用担心C盘爆满，毕竟博客大多是文字，占不了多少。<strong>万一一会搭建博客出了什么问题，直接把blog文件删掉重来</strong></p><p>3.（在命令窗口）进入blog文件夹，一般打开cmd是在用户名文件下，新建的文件通过<code>cd blog</code>命令进入</p><p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200516013124.png"  alt=""></p><p>4.（在获得管理员权限命令窗口）生成博客，初始化博客输入<code>hexo init</code>  {这里我有些遗忘，好像需要给git配置一下环境，我加在了上面下载git的部分},如何看是否生成成功呢，windows直接进入前面新建的名为blog的文件夹看是否有许多文件生成。</p><p>5.（在命令窗口）生成博客，输入<code>hexo s</code>,等待，复制生成的<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>  进入看是否生成博客。</p><p>6.然后ctrl+c断开，输入Y，这时应该在blog目录下，比如我的</p><p><code>C:\Users\Asaki\blog&gt;</code></p><p>此时你刚进入的网页（<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> ）刷新就没了，不过没关系，那只是本地生成了而已，再来一遍hexo s又出来了。</p><h1 id="写博文"><a href="#写博文" class="headerlink" title="写博文"></a>写博文</h1><p>在blog目录下，你的黑色命令行如果关掉的话，打开时是在用户目录下的，需要<code>cd blog</code>进入博客目录</p><p>1.在blog文件夹下输入<code>hexo n “你的文章主题</code>，注意n和”之间有空格，回车后生成<code>INFO Created: /user/Asaki/blog/soure/_posts/你的文章主题.md</code></p><p>,此时windows可以进入C盘的用户中blog里找到soure/_posts/，然后你会看到你生成的博文主题，对它右键用Typora打开  <!--前面提到过，记得吗？-->你就可以写东西了，具体怎么用请百度，Typora有代码命令也可以学习一下，写完后呢保存一下。</p><p>2.回到cmd命令框，此时还是在blog目录下，输入<code>hexo g</code>（生成），然后<code>hexo s</code>（本地查看），</p><p>3.因为博客在本地生成了，只有自己看的到，没什么用啊。所以要部署到远端（网页）上，借用github的服务器，有钱你可以用阿里云的，或者腾讯云的服务器，当然我喜欢白嫖，所以免费的真香</p><p>4.github的流程（懒得写，抄的<a href="https://xujun.blog.csdn.net/article/details/53576018?utm_source=app）" target="_blank" rel="noopener">https://xujun.blog.csdn.net/article/details/53576018?utm_source=app）</a></p><p>github账户的注册和配置<br>如果已经拥有账号，请跳过此步~</p><p>第一步: Github注册</p><p>打开<a href="https://github.com/，在下图的框中，分别输入自己的用户名，邮箱，密码。" target="_blank" rel="noopener">https://github.com/，在下图的框中，分别输入自己的用户名，邮箱，密码。</a></p><p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200516024635.png"  alt="image-20200516024623300"></p><p>然后前往自己刚才填写的邮箱，点开Github发送给你的注册确认信，确认注册，结束注册流程。</p><p>一定要确认注册，否则无法使用gh-pages！</p><p>第二步: 创建代码库</p><p>登陆之后，点击页面右上角的加号，选择New repository：</p><p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200516024259.png"  alt=""></p><p>新建代码库</p><p>进入代码库创建页面：</p><p>在Repository name下填写yourname.github.io，Description (optional)下填写一些简单的描述（不写也没有关系），如图所示：</p><p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200516024853.png"  alt="image-20200516024851491"></p><p>注意：比如我的github名称是Yaoguang161 ,这里你就填 Yaoguang161.github.io,如果你的名字是ASAKI，那你就填 ASAKI.github.io   <strong>一定注意是你的注册昵称加github.io</strong>       不要用中文昵称，我注册过了所以，显示警告重复名。</p><p>第三步: . 代码库设置github.io</p><p>正确创建之后，你将会看到如下界面：</p><p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200516124954.jpg"  alt=""></p><p>接下来开启gh-pages功能，点击界面右侧的Settings，你将会打开这个库的setting页面，向下拖动，直到看见GitHub Pages，如图：</p><p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200516025605.jpg"  alt=""></p><p>Github pages</p><p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200516025906.jpg"  alt=""></p><p>点击Automatic page generator，Github将会自动替你创建出一个gh-pages的页面。 如果你的配置没有问题，那么大约15分钟之后，yourname.github.io这个网址就可以正常访问了~ 如果yourname.github.io已经可以正常访问了，那么Github一侧的配置已经全部结束了。</p><h1 id="部署远端"><a href="#部署远端" class="headerlink" title="部署远端"></a>部署远端</h1><p>1.在命令窗口中（blog目录下），用<code>hexo -g</code>,<code>hexo -s</code>,<code>hexo -d</code>,一套服务，当然在此之前也可以用<code>hexo clean</code>清理下生成的多余辣鸡文件，然后输入你的网址，及github上的昵称，比如我的<code>Yaoguang161.github.io</code>，如果有网页404那就再等待一会儿</p><p>2.能进入后博客，基本搭建完成。</p>]]></content>
     
