@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://isk.ink/"/>
-  <updated>2020-05-16T08:35:28.928Z</updated>
+  <updated>2020-05-16T16:58:07.710Z</updated>
   <id>http://isk.ink/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title> vscode配置</title>
+    <link href="http://isk.ink/2020/05/16/vscode%E9%85%8D%E7%BD%AE/"/>
+    <id>http://isk.ink/2020/05/16/vscode%E9%85%8D%E7%BD%AE/</id>
+    <published>2020-05-16T15:34:48.000Z</published>
+    <updated>2020-05-16T16:58:07.710Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>1.首先，去微软官方下载vscode<br>vscode官网</p><p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200516234142.png"  alt=""></p><p>2.然后需要下载C/C++的编译器即mingw<br>下载网址：<a href="http://mingw.org/" target="_blank" rel="noopener">http://mingw.org/</a></p><p>进入后下滑</p><p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200516234624.png"  alt=""></p><p>点击如下图位置</p><p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200517000310.png"  alt=""></p><p>在这里插入图片描述</p><p>我加载了一些项目，仅供参考<br>在这里插入图片描述<br>在这里插入图片描述</p><p>加载完之后需要将bin目录添加到环境变量里面去<br>步骤如下：<br>找到MingW的bin目录<br>在这里插入图片描述</p><p>打开控制面板-&gt;系统和安全-&gt;系统<br>在这里插入图片描述</p><p>点击更改设置-&gt;高级-&gt;环境变量-&gt;找到path-&gt;点击编辑-&gt;点击新建<br>然后将bin路径添加进去<br>在这里插入图片描述<br>在这里插入图片描述</p><p>添加完成就开始配置VScode<br>在扩展商店中搜索C/C++，下载人数最多的那个就是<br>下载完成之后新建文件夹，就是你以后编程的地方，然后设置为工作区（在文件项里）<br>在这里插入图片描述</p><p>在这里插入图片描述</p><p>写一个helloworld在里面<br>在这里插入图片描述</p><p>随便保存了一个名字<br>在这里插入图片描述</p><p>点击调试，选择gdb<br>在这里插入图片描述</p><p>自动生成了如下文件<br>在这里插入图片描述<br>将里面的配置直接换成如下内容</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;p&gt;1.首先，去微软官方下载vscode&lt;br&gt;vscode官网&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/&quot; class=&quot;lazy
+      
+    
+    </summary>
+    
+    
+    
+      <category term="VS" scheme="http://isk.ink/tags/VS/"/>
+    
+  </entry>
   
   <entry>
     <title>【生活】泡茶的技巧</title>
@@ -46,7 +71,7 @@
     <link href="http://isk.ink/2020/05/16/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E2%80%94%E2%80%94%E8%B8%A9%E5%9D%91/"/>
     <id>http://isk.ink/2020/05/16/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E2%80%94%E2%80%94%E8%B8%A9%E5%9D%91/</id>
     <published>2020-05-15T16:36:08.000Z</published>
-    <updated>2020-05-16T07:14:39.525Z</updated>
+    <updated>2020-05-16T08:59:47.349Z</updated>
     
     <content type="html"><![CDATA[<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p>1.下载 node.js (windows)  <!--windows安装完可能要重启电脑--></p><p>2.下载git并配置环境我参考的是CSDN大佬<a href="https://blog.csdn.net/huangqqdy/article/details/83032408?utm_source=app" target="_blank" rel="noopener">https://blog.csdn.net/huangqqdy/article/details/83032408?utm_source=app</a></p><p>3.linux系统需要进入root（管理员权限）</p><p>windows系统进入命令窗口（cmd）<!--管理员权限-->，然后输入“<code>node  -v</code>”查看版本，接着<code>npm  -v</code>看版本      <!--其实这一些版本查看也可以省略--></p><p>4.（在命令窗口）下载镜像源，借用淘宝的镜像源，中国有互联网局域网限制下载外国的东西会很慢，有的比百度云都慢（不是我黑百度云）在命令窗口中输入<code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code></p><p>5.（在命令窗口）输入命令框中输入<code>cnpm</code>查看效果，接着<code>cnpm -v</code>查看版本</p><p>6.下载文档编辑器。个人推荐Typora，功能不错，注意下载时生成鼠标右键快捷方式。</p><h2 id="下载博客框架"><a href="#下载博客框架" class="headerlink" title="下载博客框架"></a>下载博客框架</h2><p>1.我所采用的是hexo博客框架，个人没用过wordpress框架，当然你也可以选择，还有很多看自己喜欢</p><p>（在命令窗口）输入<code>cnpm install -g hexo-cli</code>等待下载，下载完后输入hexo -v查看版本</p><p>2.新建立新文件夹命名blog（windows直接右键添加），个人建议建在C盘用户目录下，其实不用担心C盘爆满，毕竟博客大多是文字，占不了多少。<strong>万一一会搭建博客出了什么问题，直接把blog文件删掉重来</strong></p><p>3.（在命令窗口）进入blog文件夹，一般打开cmd是在用户名文件下，新建的文件通过<code>cd blog</code>命令进入</p><p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200516013124.png"  alt=""></p><p>4.（在获得管理员权限命令窗口）生成博客，初始化博客输入<code>hexo init</code>  {这里我有些遗忘，好像需要给git配置一下环境，我加在了上面下载git的部分},如何看是否生成成功呢，windows直接进入前面新建的名为blog的文件夹看是否有许多文件生成。</p><p>5.（在命令窗口）生成博客，输入<code>hexo s</code>,等待，复制生成的<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>  进入看是否生成博客。</p><p>6.然后ctrl+c断开，输入Y，这时应该在blog目录下，比如我的</p><p><code>C:\Users\Asaki\blog&gt;</code></p><p>此时你刚进入的网页（<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> ）刷新就没了，不过没关系，那只是本地生成了而已，再来一遍hexo s又出来了。</p><h1 id="写博文"><a href="#写博文" class="headerlink" title="写博文"></a>写博文</h1><p>在blog目录下，你的黑色命令行如果关掉的话，打开时是在用户目录下的，需要<code>cd blog</code>进入博客目录</p><p>1.在blog文件夹下输入<code>hexo n “你的文章主题</code>，注意n和”之间有空格，回车后生成<code>INFO Created: /user/Asaki/blog/soure/_posts/你的文章主题.md</code></p><p>,此时windows可以进入C盘的用户中blog里找到soure/_posts/，然后你会看到你生成的博文主题，对它右键用Typora打开  <!--前面提到过，记得吗？-->你就可以写东西了，具体怎么用请百度，Typora有代码命令也可以学习一下，写完后呢保存一下。</p><p>2.回到cmd命令框，此时还是在blog目录下，输入<code>hexo g</code>（生成），然后<code>hexo s</code>（本地查看），</p><p>3.因为博客在本地生成了，只有自己看的到，没什么用啊。所以要部署到远端（网页）上，借用github的服务器，有钱你可以用阿里云的，或者腾讯云的服务器，当然我喜欢白嫖，所以免费的真香</p><p>4.github的流程（懒得写，抄的<a href="https://xujun.blog.csdn.net/article/details/53576018?utm_source=app）" target="_blank" rel="noopener">https://xujun.blog.csdn.net/article/details/53576018?utm_source=app）</a></p><p>github账户的注册和配置<br>如果已经拥有账号，请跳过此步~</p><p>第一步: Github注册</p><p>打开<a href="https://github.com/，在下图的框中，分别输入自己的用户名，邮箱，密码。" target="_blank" rel="noopener">https://github.com/，在下图的框中，分别输入自己的用户名，邮箱，密码。</a></p><p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200516024635.png"  alt="image-20200516024623300"></p><p>然后前往自己刚才填写的邮箱，点开Github发送给你的注册确认信，确认注册，结束注册流程。</p><p>一定要确认注册，否则无法使用gh-pages！</p><p>第二步: 创建代码库</p><p>登陆之后，点击页面右上角的加号，选择New repository：</p><p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200516024259.png"  alt=""></p><p>新建代码库</p><p>进入代码库创建页面：</p><p>在Repository name下填写yourname.github.io，Description (optional)下填写一些简单的描述（不写也没有关系），如图所示：</p><p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200516024853.png"  alt="image-20200516024851491"></p><p>注意：比如我的github名称是Yaoguang161 ,这里你就填 Yaoguang161.github.io,如果你的名字是ASAKI，那你就填 ASAKI.github.io   <strong>一定注意是你的注册昵称加github.io</strong>       不要用中文昵称，我注册过了所以，显示警告重复名。</p><p>第三步: . 代码库设置github.io</p><p>正确创建之后，你将会看到如下界面：</p><p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200516124954.jpg"  alt=""></p><p>接下来开启gh-pages功能，点击界面右侧的Settings，你将会打开这个库的setting页面，向下拖动，直到看见GitHub Pages，如图：</p><p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200516025605.jpg"  alt=""></p><p>Github pages</p><p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200516025906.jpg"  alt=""></p><p>点击Automatic page generator，Github将会自动替你创建出一个gh-pages的页面。 如果你的配置没有问题，那么大约15分钟之后，yourname.github.io这个网址就可以正常访问了~ 如果yourname.github.io已经可以正常访问了，那么Github一侧的配置已经全部结束了。</p><h1 id="部署远端"><a href="#部署远端" class="headerlink" title="部署远端"></a>部署远端</h1><p>1.在命令窗口中（blog目录下），用<code>hexo -g</code>,<code>hexo -s</code>,<code>hexo -d</code>,一套服务，当然在此之前也可以用<code>hexo clean</code>清理下生成的多余辣鸡文件，然后输入你的网址，及github上的昵称，比如我的<code>Yaoguang161.github.io</code>，如果有网页404那就再等待一会儿</p><p>2.能进入后博客，基本搭建完成。</p>]]></content>
     
