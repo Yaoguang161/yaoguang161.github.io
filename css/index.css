@@ -4326,6 +4326,43 @@ img {
     display: block !important;
   }
 }
+#vcomment button {
+  padding: 0.3rem 1rem;
+  border-color: #fff;
+  background-color: #49b1f5;
+  color: #fff;
+  font-size: 0.7rem;
+}
+#vcomment button:hover {
+  background-color: #ff7242;
+}
+#vcomment textarea {
+  background: url("/img/comment_bg.png") 100% 100% no-repeat;
+}
+#vcomment .info {
+  display: none;
+}
+#vcomment .vimg {
+  border: 0;
+}
+#vcomment .vimg:hover {
+  -webkit-transform: rotate(540deg);
+  -moz-transform: rotate(540deg);
+  -o-transform: rotate(540deg);
+  -ms-transform: rotate(540deg);
+  transform: rotate(540deg);
+}
+#vcomment .vat {
+  padding: 0 0.8rem;
+  border: 1px solid #49b1f5;
+  border-radius: 5px;
+  color: #49b1f5;
+  font-size: 0.7125rem;
+}
+#vcomment .vat:hover {
+  background-color: #49b1f5;
+  color: #fff;
+}
 .fireworks {
   position: fixed;
   top: 0;
