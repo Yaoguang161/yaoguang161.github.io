@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://isk.ink/"/>
-  <updated>2020-05-25T07:04:37.637Z</updated>
+  <updated>2020-05-27T12:33:19.014Z</updated>
   <id>http://isk.ink/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【效率】搜索引擎的 “语法”</title>
+    <link href="http://isk.ink/2020/05/27/%E3%80%90%E6%95%88%E7%8E%87%E3%80%91%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E7%9A%84-%E2%80%9C%E8%AF%AD%E6%B3%95%E2%80%9D/"/>
+    <id>http://isk.ink/2020/05/27/%E3%80%90%E6%95%88%E7%8E%87%E3%80%91%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E7%9A%84-%E2%80%9C%E8%AF%AD%E6%B3%95%E2%80%9D/</id>
+    <published>2020-05-27T11:18:03.000Z</published>
+    <updated>2020-05-27T12:33:19.014Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="排除关键词"><a href="#排除关键词" class="headerlink" title="排除关键词"></a>排除关键词</h2><p>减号+关键词</p><p>功能是：排除一些不想要的关键词</p><p><img src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200527192322.png" alt="image-20200527192322538"></p><p><img src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200527192346.png" alt="image-20200527192346272"></p><h2 id="精确搜索"><a href="#精确搜索" class="headerlink" title="精确搜索"></a>精确搜索</h2><p>关键词加引号</p><p>功能：只搜索引号里的字（中文引号没用，只有英文引号才行</p><h2 id="指定网站内搜索"><a href="#指定网站内搜索" class="headerlink" title="指定网站内搜索"></a>指定网站内搜索</h2><p>site:域名和关键词之间加一个空格</p><p>功能：在指定网站内搜索（例 所有内容都来源于知乎）</p><p><img src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200527193731.png" alt="image-20200527193731219"></p><h2 id="指定文件格式"><a href="#指定文件格式" class="headerlink" title="指定文件格式"></a>指定文件格式</h2><p>filetype:文件格式+关键词（空格）</p><p><img src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200527195931.png" alt="image-20200527195737188"></p><h2 id="指定标题搜索"><a href="#指定标题搜索" class="headerlink" title="指定标题搜索"></a>指定标题搜索</h2><p>intitle:关键词</p><p><img src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200527200204.png" alt="image-20200527200204341"></p><h2 id="指定范围搜索"><a href="#指定范围搜索" class="headerlink" title="指定范围搜索"></a>指定范围搜索</h2><p>格式类似</p><p>小米 intext:苹果</p><p>或allintext:编译原理 计算机组成原理 数据结构与算法分析</p><p><img src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200527200520.png" alt="image-20200527200503302"></p><p>或 inurl:cnki.net(即搜索来源域名都包括cnki.net)</p><p><img src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200527200715.png" alt="image-20200527200715426"></p><h2 id="叠加使用"><a href="#叠加使用" class="headerlink" title="叠加使用"></a>叠加使用</h2><p>site:douban.com 亲密关系 intext:罗兰米勒</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;排除关键词&quot;&gt;&lt;a href=&quot;#排除关键词&quot; class=&quot;headerlink&quot; title=&quot;排除关键词&quot;&gt;&lt;/a&gt;排除关键词&lt;/h2&gt;&lt;p&gt;减号+关键词&lt;/p&gt;
+&lt;p&gt;功能是：排除一些不想要的关键词&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn
+      
+    
+    </summary>
+    
+    
+    
+      <category term="效率" scheme="http://isk.ink/tags/%E6%95%88%E7%8E%87/"/>
+    
+  </entry>
   
   <entry>
     <title>【数据结构】</title>
