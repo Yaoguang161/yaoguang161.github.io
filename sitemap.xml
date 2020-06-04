@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://isk.ink/categories/index.html</loc>
+    
+    <lastmod>2020-06-04T14:37:24.289Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://isk.ink/2020/05/16/vscode%E9%85%8D%E7%BD%AE/</loc>
     
     <lastmod>2020-06-04T13:53:37.102Z</lastmod>
@@ -75,13 +82,6 @@
     <loc>http://isk.ink/music/index.html</loc>
     
     <lastmod>2020-05-26T14:35:25.880Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://isk.ink/categories/index.html</loc>
-    
-    <lastmod>2020-05-26T14:27:43.084Z</lastmod>
     
   </url>
   
