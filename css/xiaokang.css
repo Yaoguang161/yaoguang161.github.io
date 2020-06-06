@@ -11,7 +11,7 @@
   #nav {
     background: none;
   }
-  
+  /*鼠标样式*/
   body {
     cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),
         default;
