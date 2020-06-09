@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://isk.ink/link/index.html</loc>
+    
+    <lastmod>2020-06-09T03:31:10.179Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://isk.ink/2020/06/09/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/</loc>
     
-    <lastmod>2020-06-09T03:12:18.318Z</lastmod>
+    <lastmod>2020-06-09T03:16:02.192Z</lastmod>
     
   </url>
   
@@ -33,13 +40,6 @@
     <loc>http://isk.ink/2020/05/31/%E3%80%90Linux%E3%80%91Linux%E7%B3%BB%E7%BB%9FC%E7%8E%AF%E5%A2%83%E7%BC%96%E7%A8%8B/</loc>
     
     <lastmod>2020-06-09T03:03:20.746Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://isk.ink/link/index.html</loc>
-    
-    <lastmod>2020-06-08T04:28:31.039Z</lastmod>
     
   </url>
   
