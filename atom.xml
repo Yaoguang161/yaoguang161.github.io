@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://isk.ink/"/>
-  <updated>2020-06-09T03:16:02.192Z</updated>
+  <updated>2020-06-11T13:12:29.081Z</updated>
   <id>http://isk.ink/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关与office密钥的问题</title>
+    <link href="http://isk.ink/2020/06/11/%E5%85%B3%E4%B8%8Eoffice%E5%AF%86%E9%92%A5%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <id>http://isk.ink/2020/06/11/%E5%85%B3%E4%B8%8Eoffice%E5%AF%86%E9%92%A5%E7%9A%84%E9%97%AE%E9%A2%98/</id>
+    <published>2020-06-11T13:11:14.000Z</published>
+    <updated>2020-06-11T13:12:29.081Z</updated>
+    
+    <content type="html"><![CDATA[<p>关于office激活问题</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;关于office激活问题&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="office" scheme="http://isk.ink/categories/office/"/>
+    
+    
+      <category term="offcie" scheme="http://isk.ink/tags/offcie/"/>
+    
+  </entry>
   
   <entry>
     <title> Linux常用命令大全</title>
