@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://isk.ink/"/>
-  <updated>2020-06-09T03:16:02.192Z</updated>
+  <updated>2020-06-12T14:03:35.195Z</updated>
   <id>http://isk.ink/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>清除office历史版本密钥</title>
+    <link href="http://isk.ink/2020/06/12/%E6%B8%85%E9%99%A4office%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%E5%AF%86%E9%92%A5/"/>
+    <id>http://isk.ink/2020/06/12/%E6%B8%85%E9%99%A4office%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%E5%AF%86%E9%92%A5/</id>
+    <published>2020-06-12T13:24:55.000Z</published>
+    <updated>2020-06-12T14:03:35.195Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>昨天使用word时，好奇去输入了产品密钥，结果有问题，产品也没激活，导致每次使用Word或者</p><p>Excle时都会弹出激活向导。特别烦，我都把注册表删了，它居然还有。我有家庭版的office，已经激活了。但是上次输入激活密钥的那个版本的激活向导一直都在，输入了正版的密钥也没用。</p><p>采用了网上的大多解决方法，大多采用激活工具。但是我的电脑用不了就很无奈。而且大多激活工具不正规，也不能说没用，反正我的没用。而且百度流传的大多方法早就失效了。不过在我逛了一下午各个论坛后还是找到了一种更简单的方法。不用下载任何软件直接删一些东西就好，原来激活的office不会受影响。</p><h2 id="找到密钥所在位置"><a href="#找到密钥所在位置" class="headerlink" title="找到密钥所在位置"></a>找到密钥所在位置</h2><ol><li><p>开始运行命令提示符。在小娜的搜索框内输入cmd，或者win+R键输入cmd</p></li><li><p>输入cd..两次退到C盘目录下，再输入cd C:\Program Files(X86)\Microsoft Office\Office16 。注意cd 和C:...之间有个空格。每个人装Office的位置可能不一样找到你的安装位置复制粘贴过来就好</p></li><li><p>在输入：cscript OSPP.VBS /dstatus  。<strong>注意空格位置</strong></p></li><li><p>看是否会出现几个类似于KHGM9的密钥。</p></li><li><p>然后输入</p><p> cscript  ospp.vbs /unpkey:KHGM9</p><p>cscript ospp.vbs /unpkey:KHGM9</p><p>cscript ospp.vbs /unpkey:G83KT</p><p>cscript ospp.vbs /unpkey:G83KT</p><p>当然每个人的密钥都不太一样，我也忘了当时我试了几个反正都删了就对了</p></li></ol><p><img src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200612215849.png" alt=""></p><p>全删完之后基本问题就解决了。</p><p>最好还是用正版或者淘宝买的盗版。网上免费的密钥简直有毒，也不排除有些真的能用，一旦不能用，那么每次打开Word或其他office软件都会弹出软件激活向导。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;起因&quot;&gt;&lt;a href=&quot;#起因&quot; class=&quot;headerlink&quot; title=&quot;起因&quot;&gt;&lt;/a&gt;起因&lt;/h2&gt;&lt;p&gt;昨天使用word时，好奇去输入了产品密钥，结果有问题，产品也没激活，导致每次使用Word或者&lt;/p&gt;
+&lt;p&gt;Excle时都会弹出激活向导。特
+      
+    
+    </summary>
+    
+    
+      <category term="windows" scheme="http://isk.ink/categories/windows/"/>
+    
+    
+      <category term="office" scheme="http://isk.ink/tags/office/"/>
+    
+  </entry>
   
   <entry>
     <title> Linux常用命令大全</title>
