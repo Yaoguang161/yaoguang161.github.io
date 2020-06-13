@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://isk.ink/messageboard/index.html</loc>
+    
+    <lastmod>2020-06-13T08:03:14.201Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://isk.ink/2020/06/12/%E6%B8%85%E9%99%A4office%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%E5%AF%86%E9%92%A5/</loc>
     
     <lastmod>2020-06-12T14:03:35.195Z</lastmod>
@@ -82,13 +89,6 @@
     <loc>http://isk.ink/tags/index.html</loc>
     
     <lastmod>2020-05-31T11:31:38.069Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://isk.ink/messageboard/index.html</loc>
-    
-    <lastmod>2020-05-26T15:00:31.257Z</lastmod>
     
   </url>
   
