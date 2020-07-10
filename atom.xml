@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://isk.ink/"/>
-  <updated>2020-06-20T15:29:40.792Z</updated>
+  <updated>2020-06-28T08:15:11.949Z</updated>
   <id>http://isk.ink/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>虚拟机联网方法</title>
+    <link href="http://isk.ink/2020/06/28/%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%81%94%E7%BD%91%E6%96%B9%E6%B3%95/"/>
+    <id>http://isk.ink/2020/06/28/%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%81%94%E7%BD%91%E6%96%B9%E6%B3%95/</id>
+    <published>2020-06-28T07:00:58.000Z</published>
+    <updated>2020-06-28T08:15:11.949Z</updated>
+    
+    <content type="html"><![CDATA[<p>本文是对Codesheep视频中方法的改进。以及我自己按照CodeSheep所写搭建虚拟机过程中踩过的坑，更多的是改进了一些CodeSheep的方法。详细请关注CodeSheep微信公众号。</p><p>虚拟机不联网基本没什么用处，所以无论想用虚拟机做什么都需要连接互联网，我发现程序羊的联网方法有些麻烦，且难以实现。反正我用虚拟机装Ubuntu没有联网成功，可能是我太菜了，后来自己摸索找到了一种更简单的方法。作为对程序羊方法的补充。详细请移步 <a href="https://mp.weixin.qq.com/s/onVwwEQ1DAwbvK7qS2YNxg" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/onVwwEQ1DAwbvK7qS2YNxg</a></p><h2 id="VMware中的设置"><a href="#VMware中的设置" class="headerlink" title="VMware中的设置"></a>VMware中的设置</h2><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200628152303.png" alt="image-20200628152256912"></p><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200628152942.png" alt="image-20200628152942219"></p><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200628153110.png" alt="image-20200628153110637"></p><h2 id="本地网络设置"><a href="#本地网络设置" class="headerlink" title="本地网络设置"></a>本地网络设置</h2><p>好的 ，接下来就是本地网络的设置               控制面板<strong><strong>网络和Internet</strong></strong></p><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200628153906.png" alt="image-20200628153906686"></p><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200628154049.png" alt="image-20200628154049236"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;本文是对Codesheep视频中方法的改进。以及我自己按照CodeSheep所写搭建虚拟机过程中踩过的坑，更多的是改进了一些CodeSheep的方法。详细请关注CodeSheep微信公众号。&lt;/p&gt;
+&lt;p&gt;虚拟机不联网基本没什么用处，所以无论想用虚拟机做什么都需要连接互联网
+      
+    
+    </summary>
+    
+    
+    
+      <category term="VMware" scheme="http://isk.ink/tags/VMware/"/>
+    
+  </entry>
   
   <entry>
     <title>VMware虚拟机从零开始</title>
