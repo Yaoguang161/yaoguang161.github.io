@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.isk.ink/"/>
-  <updated>2020-09-26T13:35:18.829Z</updated>
+  <updated>2020-09-30T15:32:00.950Z</updated>
   <id>http://blog.isk.ink/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Serverless实现B站打卡签到</title>
+    <link href="http://blog.isk.ink/2020/09/30/%E4%B8%8D%E6%98%AF%E5%90%A7%EF%BC%8CServerless%E8%BF%98%E8%83%BD%E8%BF%99%E4%B9%88%E7%8E%A9%EF%BC%9F/"/>
+    <id>http://blog.isk.ink/2020/09/30/%E4%B8%8D%E6%98%AF%E5%90%A7%EF%BC%8CServerless%E8%BF%98%E8%83%BD%E8%BF%99%E4%B9%88%E7%8E%A9%EF%BC%9F/</id>
+    <published>2020-09-30T14:51:21.000Z</published>
+    <updated>2020-09-30T15:32:00.950Z</updated>
+    
+    <content type="html"><![CDATA[<p>   窗外已经秋高气爽，内心蠢蠢欲动，但工作不能落！</p><p> 虽然我们是做技术的，但依然有个成为程序员大V的梦想。短视频领域风生水起，那就B站走起，让大家能更好地了解Serverless。</p><h3 id="进入正题"><a href="#进入正题" class="headerlink" title="进入正题"></a>进入正题</h3><h3 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h3><p>首先你要在腾讯云注册</p><p>这个脚本是实现B站自动签到打卡且不浪费闲置资源</p><p>该脚本通过Serverless Framework部署，可以实现自动定时打卡和邮件推送通知的功能。</p><p>脚本来自</p><p>github.com/happy888888/BiliExp</p><p>1.安装命令行工具Serverless Framework</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g  serverless</span><br></pre></td></tr></table></figure><p>2.下载项目模板代码。并进入模板目录<code>biliexp-demo</code></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sls inin biliexp-demo</span><br><span class="line">cd biliexp-demo</span><br></pre></td></tr></table></figure><p>3.打开config.json文档，根据说明填入对应内容，cookieDatas由浏览器获取，email处用于填入接受通知的邮件名</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;cookieDatas&quot;:[</span><br><span class="line">       &#123;</span><br><span class="line">           &quot;SESSDATA&quot;: &quot;&quot;,</span><br><span class="line">           &quot;bili_jct&quot;: &quot;&quot;,</span><br><span class="line">           &quot;DedeUserID&quot;: &quot;&quot;</span><br><span class="line">       &#125;</span><br><span class="line">   ],</span><br><span class="line">   &quot;email&quot;: &quot;&quot; ,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>4.打开<code>bilibili</code>官网，登陆自己账户获取SEEDATA,bili_jct,DedeUserID (获取方式参考下图)</p><p>并将其填入config.json文档中。见3</p><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200930232919.webp" alt="img"></p><p>5.通过命令 <code>sls deploy</code> 完成部署，部署成功后，每日可自动触发，为您完成签到打卡</p><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200930232908.png" alt="image-20200930231900584"></p><p>中途会出现一个二维码，需要用微信扫码登陆腾讯云授权腾讯云函数</p><p>6.脚本测试</p><p>部署完毕后登陆腾讯云函数控制台，击「测试」按钮检测函数运行结果，可以看到函数调用成功</p><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200930232859.png" alt="image-20200930232859187"></p><p>当然，除了 B 站签到，它也可以再拓展为其他平台的玩法，但是不要拿去干坏事哦~</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;   窗外已经秋高气爽，内心蠢蠢欲动，但工作不能落！&lt;/p&gt;
+&lt;p&gt; 虽然我们是做技术的，但依然有个成为程序员大V的梦想。短视频领域风生水起，那就B站走起，让大家能更好地了解Serverless。&lt;/p&gt;
+&lt;h3 id=&quot;进入正题&quot;&gt;&lt;a href=&quot;#进入正题&quot; clas
+      
+    
+    </summary>
+    
+    
+    
+      <category term="腾讯云" scheme="http://blog.isk.ink/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
+    
+  </entry>
   
   <entry>
     <title> 前端基础 ——（一）</title>
