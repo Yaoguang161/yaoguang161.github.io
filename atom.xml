@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.isk.ink/"/>
-  <updated>2020-10-04T11:17:36.722Z</updated>
+  <updated>2020-10-11T03:51:57.716Z</updated>
   <id>http://blog.isk.ink/</id>
   
   <author>
@@ -17,22 +17,45 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title> Ubuntu+win10双系统花屏问题</title>
+    <link href="http://blog.isk.ink/2020/10/07/Ubuntu-win10%E5%8F%8C%E7%B3%BB%E7%BB%9F%E8%8A%B1%E5%B1%8F%E9%97%AE%E9%A2%98%E3%80%81/"/>
+    <id>http://blog.isk.ink/2020/10/07/Ubuntu-win10%E5%8F%8C%E7%B3%BB%E7%BB%9F%E8%8A%B1%E5%B1%8F%E9%97%AE%E9%A2%98%E3%80%81/</id>
+    <published>2020-10-07T03:43:56.000Z</published>
+    <updated>2020-10-11T03:51:57.716Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>  首先为什么装好了双系统后进入Ubuntu会花屏，但是进入高级模式，进入recovery mode 模式（恢复模式）就能进入.进入方式如下图。</p><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20201007130146.jpeg" alt="在Ubuntu上使用恢复模式及Recovery Mode各选项的使用方法"></p><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20201007130201.jpeg" alt="在Ubuntu上使用恢复模式及Recovery Mode各选项的使用方法"></p><p>因为Ubuntu自带nouveau驱动，会优先启动此驱动，所以你的英伟达驱动无效，所以花屏。</p><p>也就是说只要禁用nouveau驱动就可以了。</p><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>首先开机时进入Ubuntu高级选项，有些人是英文的但不重要</p><p>禁用nouveau驱动</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim  &#x2F;etc&#x2F;modprobe.d&#x2F;blacklist</span><br></pre></td></tr></table></figure><p>打开后用vim编辑格式添加以下内容</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">blacklist nouveau</span><br><span class="line">options nouveau modeset&#x3D;0</span><br></pre></td></tr></table></figure><p>保存后更新</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo update-initramfs -u</span><br></pre></td></tr></table></figure><p>或者用这种方法保存</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rmmod nouveau</span><br></pre></td></tr></table></figure><p>接着安装英伟达驱动。也可以用liunx命令但是，我不会</p><p>但是可以用别的方法</p><p>进入Ubuntu的《软件和更新》，进附加驱动</p><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20201007130207.jpeg" alt="img"></p><p>选一个就好，Ubuntu主要是来开发的，显卡没那么重要，也没必要装电脑显卡型号的专有驱动，也不用来打游戏，装了只是耗电。，</p><h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>重启电脑 就可以进入第一个Ubuntu了</p><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20201007130214.jpeg" alt="在Ubuntu上使用恢复模式及Recovery Mode各选项的使用方法"></p><p>最后 附上linus的一句话：Cheerleading any kind of inanimate object is silly.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;  首先为什么装好了双系统后进入Ubuntu会花屏，但是进入高级模式，进入recovery mode 模式（恢复模式）就能进入.进入方式如下
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Ubuntu" scheme="http://blog.isk.ink/tags/Ubuntu/"/>
+    
+  </entry>
+  
+  <entry>
     <title> win10+Ubuntu双系统的安装</title>
     <link href="http://blog.isk.ink/2020/10/04/win10%E5%92%8CUbuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89%E8%A3%85/"/>
     <id>http://blog.isk.ink/2020/10/04/win10%E5%92%8CUbuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89%E8%A3%85/</id>
     <published>2020-10-04T10:13:13.000Z</published>
-    <updated>2020-10-04T11:17:36.722Z</updated>
+    <updated>2020-10-04T11:21:45.562Z</updated>
     
-    <content type="html"><![CDATA[<p>​    双系统与虚拟机各有优点。</p><p>本次讨论如何装win10和Ubuntu双系统。</p><h1 id="工具准备"><a href="#工具准备" class="headerlink" title="工具准备"></a>工具准备</h1><ul><li><p>rufus软件（win10），<a href="https://rufus.ie/" target="_blank" rel="noopener">下载地址</a></p></li><li><p>U盘一个，8G</p></li><li><p>Ubuntu镜像文件（win10）<a href="https://ubuntu.com/#download" target="_blank" rel="noopener">下载地址</a></p></li><li><p>电脑一台</p><h1 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h1></li></ul><p>插入U盘，打开rufus，开始制作U盘启动盘</p><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20201004183531.png" alt="QQ图片20201004182820"></p><p>设备选择你的U盘，引导类型选择选你的iso文件（点右边的“选择”），其他默认</p><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20201004183552.jpeg" alt="img"></p><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20201004183631.jpeg" alt="img"></p><p>然后等完成后就可以关闭rufus了，接着进入回收站，鼠标右击“此电脑”，选择“管理”</p><p>——磁盘管理</p><p>选择最后一个盘，点击压缩卷，分出你的另一个系统需要的磁盘大小，此时磁盘显示为未分配状态。（分小了也不要紧，下篇博客叫你如何扩展Ubuntu系统的磁盘）</p><h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>在win10下按住shift重启，大概3秒</p><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20201004184740.png" alt="image-20201004184740207"></p><p>出现这样，然后选择“使用设备”，选择你的U盘启动</p><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20201004184841.jpeg" alt="img"></p><p>选择简体中文，安装Ubuntu</p><p>等到了下面这部分，就很重要的</p><p>注意</p><p>注意！</p><p>注意！！千万选第三个</p><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20201004184957.jpeg" alt="img"></p><p>选择你的开始分离出来的空闲盘</p><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20201004191018.png" alt="image-20201004185640676"></p><p>挂载点 初学者填一个“  /”就好，不够用还可以加</p><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20201004191011.png" alt="image-20201004185747186"></p><p>剩下的时区选上海，电脑的用户名，电脑名称，密码就自己设置</p><p>接着安装完后，会让你点重启</p><p>重启就完了。</p><p>然后会进入GUN GRUB界面，类似于这样</p><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20201004191000.png" alt="win10+ubuntu双系统修复ubuntu启动引导_槑宝包-CSDN博客"></p><p>如果你选第一个花屏的话，不过有些电脑没有，我下个博客有解决方法，我也遇到了。</p>]]></content>
+    <content type="html"><![CDATA[<p>​    双系统与虚拟机各有优点。</p><p>本次讨论如何装win10和Ubuntu双系统。本文简述，安装并不复杂，安装完成后出现的问题才复杂，所以安装就不多解释。只是重点部分说一下。</p><h1 id="工具准备"><a href="#工具准备" class="headerlink" title="工具准备"></a>工具准备</h1><ul><li><p>rufus软件（win10），<a href="https://rufus.ie/" target="_blank" rel="noopener">下载地址</a></p></li><li><p>U盘一个，8G</p></li><li><p>Ubuntu镜像文件（win10）<a href="https://ubuntu.com/#download" target="_blank" rel="noopener">下载地址</a></p></li><li><p>电脑一台</p><h1 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h1></li></ul><p>插入U盘，打开rufus，开始制作U盘启动盘</p><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20201004183531.png" alt="QQ图片20201004182820"></p><p>设备选择你的U盘，引导类型选择选你的iso文件（点右边的“选择”），其他默认</p><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20201004183552.jpeg" alt="img"></p><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20201004183631.jpeg" alt="img"></p><p>然后等完成后就可以关闭rufus了，接着进入回收站，鼠标右击“此电脑”，选择“管理”</p><p>——磁盘管理</p><p>选择最后一个盘，点击压缩卷，分出你的另一个系统需要的磁盘大小，此时磁盘显示为未分配状态。（分小了也不要紧，下篇博客叫你如何扩展Ubuntu系统的磁盘）</p><h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>在win10下按住shift重启，大概3秒</p><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20201004184740.png" alt="image-20201004184740207"></p><p>出现这样，然后选择“使用设备”，选择你的U盘启动</p><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20201004184841.jpeg" alt="img"></p><p>选择简体中文，安装Ubuntu</p><p>等到了下面这部分，就很重要的</p><p>注意</p><p>注意！</p><p>注意！！千万选第三个</p><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20201004184957.jpeg" alt="img"></p><p>选择你的开始分离出来的空闲盘</p><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20201004191018.png" alt="image-20201004185640676"></p><p>挂载点 初学者填一个“  /”就好，不够用还可以加</p><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20201004191011.png" alt="image-20201004185747186"></p><p>剩下的时区选上海，电脑的用户名，电脑名称，密码就自己设置</p><p>接着安装完后，会让你点重启</p><p>重启就完了。</p><p>然后会进入GUN GRUB界面，类似于这样</p><p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20201004191000.png" alt="win10+ubuntu双系统修复ubuntu启动引导_槑宝包-CSDN博客"></p><p>如果你选第一个花屏的话，不过有些电脑没有，我下个博客有解决方法，我也遇到了。</p><p>参考博客：<a href="https://blog.csdn.net/wuShiJingZuo/article/details/104981090?utm_source=app" target="_blank" rel="noopener">https://blog.csdn.net/wuShiJingZuo/article/details/104981090?utm_source=app</a></p><p><a href="https://www.bilibili.com/video/BV11k4y1k7Li" target="_blank" rel="noopener">https://www.bilibili.com/video/BV11k4y1k7Li</a></p><p><a href="https://www.cnblogs.com/yychuyu/p/12960365.html" target="_blank" rel="noopener">https://www.cnblogs.com/yychuyu/p/12960365.html</a></p>]]></content>
     
     <summary type="html">
     
       
       
         &lt;p&gt;​    双系统与虚拟机各有优点。&lt;/p&gt;
-&lt;p&gt;本次讨论如何装win10和Ubuntu双系统。&lt;/p&gt;
-&lt;h1 id=&quot;工具准备&quot;&gt;&lt;a href=&quot;#工具准备&quot; class=&quot;headerlink&quot; title=&quot;工具准备&quot;&gt;&lt;/a&gt;工具准备&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;
+&lt;p&gt;本次讨论如何装win10和Ubuntu双系统。本文简述，安装并不复杂，安装完成后出现的问题才复杂，所以安装就不多解释。只是重点部分说一下。&lt;/p&gt;
+&lt;h1 id=&quot;工具准备&quot;&gt;&lt;a href=&quot;#工具准备&quot; class=&quot;h
       
     
     </summary>
