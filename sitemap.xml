@@ -228,14 +228,14 @@
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/tags/Linux/</loc>
+    <loc>http://blog.isk.ink/tags/SecureCRT/</loc>
     <lastmod>2020-12-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/tags/SecureCRT/</loc>
+    <loc>http://blog.isk.ink/tags/Linux/</loc>
     <lastmod>2020-12-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -263,14 +263,14 @@
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/tags/Ubuntu/</loc>
+    <loc>http://blog.isk.ink/tags/Untuntu/</loc>
     <lastmod>2020-12-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/tags/Untuntu/</loc>
+    <loc>http://blog.isk.ink/tags/Ubuntu/</loc>
     <lastmod>2020-12-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -298,13 +298,6 @@
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/tags/CLion/</loc>
-    <lastmod>2020-12-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.isk.ink/tags/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2020-12-12</lastmod>
     <changefreq>daily</changefreq>
@@ -312,14 +305,21 @@
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    <loc>http://blog.isk.ink/tags/%E6%95%88%E7%8E%87/</loc>
     <lastmod>2020-12-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/tags/%E6%95%88%E7%8E%87/</loc>
+    <loc>http://blog.isk.ink/tags/CLion/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
     <lastmod>2020-12-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -405,13 +405,6 @@
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/categories/CLion/</loc>
-    <lastmod>2020-12-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.isk.ink/categories/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2020-12-12</lastmod>
     <changefreq>daily</changefreq>
@@ -419,14 +412,21 @@
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    <loc>http://blog.isk.ink/categories/Google/</loc>
     <lastmod>2020-12-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/categories/Google/</loc>
+    <loc>http://blog.isk.ink/categories/CLion/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
     <lastmod>2020-12-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
