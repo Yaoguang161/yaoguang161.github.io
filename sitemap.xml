@@ -2,220 +2,448 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.isk.ink/2020/11/04/%E3%80%90%E7%AE%97%E6%B3%95%E3%80%91%E6%89%BE%E6%9C%80%E5%B0%8F%E5%80%BC/</loc>
+    <loc>http://blog.isk.ink/2020/12/10/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
     
-    <lastmod>2020-11-04T08:56:44.065Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.isk.ink/2020/11/02/%E4%B8%89%E4%BD%8D%E6%95%B0%E6%8E%92%E5%BA%8F/</loc>
-    
-    <lastmod>2020-11-04T08:55:31.826Z</lastmod>
+    <lastmod>2020-12-12</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/2020/11/03/%E3%80%90%E7%AE%97%E6%B3%95%E3%80%91%E4%B8%8D%E9%AB%98%E5%85%B4%E7%9A%84%E6%B4%A5%E6%B4%A5/</loc>
+    <loc>http://blog.isk.ink/2020/12/03/%E5%A6%82%E4%BD%95%E5%9C%A8CLion%E8%BF%90%E8%A1%8C%E5%A4%9A%E4%B8%AAmain%E5%87%BD%E6%95%B0/</loc>
     
-    <lastmod>2020-11-04T08:54:34.981Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.isk.ink/2020/10/31/C%E8%AF%AD%E8%A8%80%E4%B8%AD%E6%8C%89%E4%BD%8D%E4%B8%8E-%E6%88%96-%E5%BC%82%E6%88%96%E8%BF%90%E7%AE%97%E7%AC%94%E8%AE%B0/</loc>
-    
-    <lastmod>2020-10-31T02:26:02.885Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.isk.ink/2020/10/19/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/</loc>
-    
-    <lastmod>2020-10-21T08:48:41.021Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.isk.ink/2020/09/20/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
-    
-    <lastmod>2020-10-19T10:36:45.064Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.isk.ink/2020/09/09/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80/</loc>
-    
-    <lastmod>2020-10-17T09:04:32.570Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.isk.ink/2020/10/15/win10%E5%92%8CUbuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%BB%99Ubuntu%E5%A2%9E%E5%8A%A0%E7%A3%81%E7%9B%98%E7%A9%BA%E9%97%B4/</loc>
-    
-    <lastmod>2020-10-15T13:32:06.512Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.isk.ink/2020/10/07/Ubuntu-win10%E5%8F%8C%E7%B3%BB%E7%BB%9F%E8%8A%B1%E5%B1%8F%E9%97%AE%E9%A2%98%E3%80%81/</loc>
-    
-    <lastmod>2020-10-15T13:29:49.507Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.isk.ink/2020/10/04/win10%E5%92%8CUbuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89%E8%A3%85/</loc>
-    
-    <lastmod>2020-10-04T11:21:45.562Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.isk.ink/2020/09/30/%E4%B8%8D%E6%98%AF%E5%90%A7%EF%BC%8CServerless%E8%BF%98%E8%83%BD%E8%BF%99%E4%B9%88%E7%8E%A9%EF%BC%9F/</loc>
-    
-    <lastmod>2020-10-04T10:01:02.688Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.isk.ink/2020/05/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
-    
-    <lastmod>2020-09-21T13:34:54.665Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.isk.ink/2020/05/28/%E3%80%90C++%E3%80%91C++%E5%A4%8D%E4%B9%A0/</loc>
-    
-    <lastmod>2020-09-21T13:34:32.306Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.isk.ink/2020/05/31/%E3%80%90Linux%E3%80%91Linux%E7%B3%BB%E7%BB%9FC%E7%8E%AF%E5%A2%83%E7%BC%96%E7%A8%8B/</loc>
-    
-    <lastmod>2020-09-21T13:32:33.666Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.isk.ink/about/index.html</loc>
-    
-    <lastmod>2020-09-16T12:11:35.674Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.isk.ink/2020/08/30/SecureCRT-%E4%B8%8B%E8%BD%BD%E5%8F%8A%E4%BD%BF%E7%94%A8/</loc>
-    
-    <lastmod>2020-09-09T03:26:46.351Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.isk.ink/2020/06/28/%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%81%94%E7%BD%91%E6%96%B9%E6%B3%95/</loc>
-    
-    <lastmod>2020-08-13T05:32:04.498Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.isk.ink/2020/06/20/VMware%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B/</loc>
-    
-    <lastmod>2020-06-20T15:29:40.792Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.isk.ink/messageboard/index.html</loc>
-    
-    <lastmod>2020-06-15T13:44:32.572Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.isk.ink/2020/06/12/%E6%B8%85%E9%99%A4office%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%E5%AF%86%E9%92%A5/</loc>
-    
-    <lastmod>2020-06-12T14:03:35.195Z</lastmod>
+    <lastmod>2020-12-03</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.isk.ink/link/index.html</loc>
     
-    <lastmod>2020-06-09T03:31:10.179Z</lastmod>
+    <lastmod>2020-11-28</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/2020/06/09/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/</loc>
+    <loc>http://blog.isk.ink/2020/09/20/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
     
-    <lastmod>2020-06-09T03:16:02.192Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.isk.ink/2020/05/16/vscode%E9%85%8D%E7%BD%AE/</loc>
-    
-    <lastmod>2020-06-09T03:04:29.768Z</lastmod>
+    <lastmod>2020-11-28</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/2020/05/16/%E3%80%90%E7%94%9F%E6%B4%BB%E3%80%91%E6%B3%A1%E8%8C%B6%E7%9A%84%E6%8A%80%E5%B7%A7/</loc>
+    <loc>http://blog.isk.ink/2020/10/31/C%E8%AF%AD%E8%A8%80%E4%B8%AD%E6%8C%89%E4%BD%8D%E4%B8%8E-%E6%88%96-%E5%BC%82%E6%88%96%E8%BF%90%E7%AE%97%E7%AC%94%E8%AE%B0/</loc>
     
-    <lastmod>2020-06-09T03:04:15.893Z</lastmod>
+    <lastmod>2020-11-28</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/2020/05/27/%E3%80%90%E6%95%88%E7%8E%87%E3%80%91%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E7%9A%84-%E2%80%9C%E8%AF%AD%E6%B3%95%E2%80%9D/</loc>
+    <loc>http://blog.isk.ink/2020/11/21/Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E4%BF%AE%E6%94%B9grub%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E9%A1%B9/</loc>
     
-    <lastmod>2020-06-09T03:03:56.419Z</lastmod>
+    <lastmod>2020-11-28</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/2020/10/19/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/</loc>
+    
+    <lastmod>2020-11-28</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/2020/09/30/%E4%B8%8D%E6%98%AF%E5%90%A7%EF%BC%8CServerless%E8%BF%98%E8%83%BD%E8%BF%99%E4%B9%88%E7%8E%A9%EF%BC%9F/</loc>
+    
+    <lastmod>2020-11-28</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.isk.ink/2020/05/16/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E2%80%94%E2%80%94%E8%B8%A9%E5%9D%91/</loc>
     
-    <lastmod>2020-06-06T14:57:43.774Z</lastmod>
+    <lastmod>2020-11-28</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/2020/06/09/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/</loc>
+    
+    <lastmod>2020-11-28</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/2020/05/28/C++%E5%A4%8D%E4%B9%A0/</loc>
+    
+    <lastmod>2020-11-28</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/2020/10/15/Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%BB%99Ubuntu%E5%A2%9E%E5%8A%A0%E7%A3%81%E7%9B%98%E7%A9%BA%E9%97%B4/</loc>
+    
+    <lastmod>2020-11-28</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/2020/10/04/Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89%E8%A3%85/</loc>
+    
+    <lastmod>2020-11-28</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/2020/10/07/Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E8%8A%B1%E5%B1%8F%E9%97%AE%E9%A2%98%E3%80%81/</loc>
+    
+    <lastmod>2020-11-28</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/2020/05/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    
+    <lastmod>2020-09-21</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/2020/05/31/Linux%E7%B3%BB%E7%BB%9FC%E7%8E%AF%E5%A2%83%E7%BC%96%E7%A8%8B/</loc>
+    
+    <lastmod>2020-09-21</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/about/index.html</loc>
+    
+    <lastmod>2020-09-16</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/2020/08/30/SecureCRT-%E4%B8%8B%E8%BD%BD%E5%8F%8A%E4%BD%BF%E7%94%A8/</loc>
+    
+    <lastmod>2020-09-09</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/2020/06/28/%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%81%94%E7%BD%91%E6%96%B9%E6%B3%95/</loc>
+    
+    <lastmod>2020-08-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/2020/06/20/VMware%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B/</loc>
+    
+    <lastmod>2020-06-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/messageboard/index.html</loc>
+    
+    <lastmod>2020-06-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/2020/06/12/%E6%B8%85%E9%99%A4office%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%E5%AF%86%E9%92%A5/</loc>
+    
+    <lastmod>2020-06-12</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/2020/05/16/Vscode%E9%85%8D%E7%BD%AE/</loc>
+    
+    <lastmod>2020-06-09</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/2020/05/16/%E6%B3%A1%E8%8C%B6%E7%9A%84%E6%8A%80%E5%B7%A7/</loc>
+    
+    <lastmod>2020-06-09</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/2020/05/27/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E7%9A%84-%E2%80%9C%E8%AF%AD%E6%B3%95%E2%80%9D/</loc>
+    
+    <lastmod>2020-06-09</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.isk.ink/categories/index.html</loc>
     
-    <lastmod>2020-06-04T14:37:24.289Z</lastmod>
+    <lastmod>2020-06-04</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.isk.ink/tags/index.html</loc>
     
-    <lastmod>2020-05-31T11:31:38.069Z</lastmod>
+    <lastmod>2020-05-31</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.isk.ink/movies/index.html</loc>
     
-    <lastmod>2020-05-26T14:36:28.916Z</lastmod>
+    <lastmod>2020-05-26</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.isk.ink/music/index.html</loc>
     
-    <lastmod>2020-05-26T14:35:25.880Z</lastmod>
+    <lastmod>2020-05-26</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.isk.ink/2020/04/22/%E6%88%91%E8%AE%A9%E4%BD%A0%E7%82%B9%E4%BA%86%E5%90%97%EF%BC%9F/</loc>
     
-    <lastmod>2020-05-25T07:05:00.958Z</lastmod>
+    <lastmod>2020-05-25</lastmod>
     
+  </url>
+  
+
+  <url>
+    <loc>http://blog.isk.ink/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  
+  <url>
+    <loc>http://blog.isk.ink/tags/C-C/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/tags/Linux/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/tags/SecureCRT/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/tags/VMware/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/tags/VS-code/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/tags/Ununtu/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/tags/Ubuntu/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/tags/Untuntu/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/tags/HTML/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/tags/%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/tags/CSS/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/tags/CLion/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/tags/%E6%95%88%E7%8E%87/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/tags/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/tags/office/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/tags/Java/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+
+  
+  <url>
+    <loc>http://blog.isk.ink/categories/C-C/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/categories/Linux/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/categories/VMware/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/categories/VScode/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/categories/%E5%8F%8C%E7%B3%BB%E7%BB%9F/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/categories/%E8%85%BE%E8%AE%AF%E4%BA%91/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/categories/HTML/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/categories/%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/categories/CSS/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/categories/CLion/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/categories/Google/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/categories/windows/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
   </url>
   
 </urlset>
