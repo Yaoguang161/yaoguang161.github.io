@@ -127,17 +127,17 @@ if (asideStatus !== undefined) {
 <p> <font size=" 5px">在CLion中写完一题，想写下一题，结果发现main函数不能运行</font></p>
 <h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><p>在查找谷歌和百度多个大佬不同的方法后找到了一个最简单有效的方法</p>
 <p>直接修改CMakelists.txt</p>
-<p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20201203212413.png" alt="image-20201203212406853"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20201203212413.png" alt="image-20201203212406853"></p>
 <p>下面以我Project的CMakgeList.txt为例</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">cmake_minimum_required(VERSION 3.16)</span><br><span class="line">project(untitled1)</span><br><span class="line"></span><br><span class="line">set(CMAKE_CXX_STANDARD 14)</span><br><span class="line"></span><br><span class="line">file (GLOB files *.cpp *&#x2F;*.cpp)</span><br><span class="line">foreach (file $&#123;files&#125;)</span><br><span class="line">    string(REGEX REPLACE &quot;.+&#x2F;(.+)&#x2F;(.+)\\..*&quot; &quot;\\1-\\2&quot; exe $&#123;file&#125;)</span><br><span class="line">    add_executable ($&#123;exe&#125; $&#123;file&#125; )</span><br><span class="line">endforeach ()</span><br></pre></td></tr></table></figure>
 
 <ol>
 <li><p>在新建对应的xx.cpp文件后，创建main函数，在项目处右击，选择Reload CMake Project</p>
-<p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20201203212504.png" alt="image-20201203212504319"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20201203212504.png" alt="image-20201203212504319"></p>
 </li>
 </ol>
 <ol start="2">
-<li>加载完成后就可以看到main函数前面出现了运行按钮，运行列表框也有了对应的运行选项。<img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20201203213142.png" alt="image-20201203213142118"></li>
+<li>加载完成后就可以看到main函数前面出现了运行按钮，运行列表框也有了对应的运行选项。<img src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20201203213142.png" alt="image-20201203213142118"></li>
 </ol>
 <h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><p>这种方法不只是能遍历根目录下的一成，如果根目录下还有文件夹，则里面的cpp文件也会被识别。</p>
 <p>例如</p>
