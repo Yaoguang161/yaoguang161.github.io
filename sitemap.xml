@@ -291,14 +291,14 @@
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/tags/Untuntu/</loc>
+    <loc>http://blog.isk.ink/tags/Ubuntu/</loc>
     <lastmod>2020-12-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/tags/Ubuntu/</loc>
+    <loc>http://blog.isk.ink/tags/Untuntu/</loc>
     <lastmod>2020-12-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -312,14 +312,14 @@
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/tags/HTML/</loc>
+    <loc>http://blog.isk.ink/tags/CSS/</loc>
     <lastmod>2020-12-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/tags/CSS/</loc>
+    <loc>http://blog.isk.ink/tags/HTML/</loc>
     <lastmod>2020-12-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -340,13 +340,6 @@
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
-    <lastmod>2020-12-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.isk.ink/tags/CLion/</loc>
     <lastmod>2020-12-14</lastmod>
     <changefreq>daily</changefreq>
@@ -355,6 +348,13 @@
   
   <url>
     <loc>http://blog.isk.ink/tags/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2020-12-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
     <lastmod>2020-12-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -419,14 +419,14 @@
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/categories/HTML/</loc>
+    <loc>http://blog.isk.ink/categories/CSS/</loc>
     <lastmod>2020-12-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/categories/CSS/</loc>
+    <loc>http://blog.isk.ink/categories/HTML/</loc>
     <lastmod>2020-12-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -447,13 +447,6 @@
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
-    <lastmod>2020-12-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.isk.ink/categories/CLion/</loc>
     <lastmod>2020-12-14</lastmod>
     <changefreq>daily</changefreq>
@@ -462,6 +455,13 @@
   
   <url>
     <loc>http://blog.isk.ink/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2020-12-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
     <lastmod>2020-12-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
