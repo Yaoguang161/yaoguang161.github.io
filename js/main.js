@@ -247,40 +247,38 @@ document.addEventListener('DOMContentLoaded', function () {
  * fancybox和 mediumZoom
  */
   const addFancybox = function (ele) {
-    if (ele.length) {
-      const runFancybox = (ele) => {
-        ele.each(function (i, o) {
-          const $this = $(o)
-          const lazyloadSrc = $this.attr('data-lazy-src') || $this.attr('src')
-          const dataCaption = $this.attr('alt') || ''
-          $this.wrap(`<a href="${lazyloadSrc}" data-fancybox="group" data-caption="${dataCaption}" class="fancybox"></a>`)
-        })
+    const runFancybox = (ele) => {
+      ele.each(function (i, o) {
+        const $this = $(o)
+        const lazyloadSrc = $this.attr('data-lazy-src') || $this.attr('src')
+        const dataCaption = $this.attr('alt') || ''
+        $this.wrap(`<a href="${lazyloadSrc}" data-fancybox="group" data-caption="${dataCaption}" class="fancybox"></a>`)
+      })
 
-        $().fancybox({
-          selector: '[data-fancybox]',
-          loop: true,
-          transitionEffect: 'slide',
-          protect: true,
-          buttons: ['slideShow', 'fullScreen', 'thumbs', 'close'],
-          hash: false
-        })
-      }
+      $().fancybox({
+        selector: '[data-fancybox]',
+        loop: true,
+        transitionEffect: 'slide',
+        protect: true,
+        buttons: ['slideShow', 'fullScreen', 'thumbs', 'close'],
+        hash: false
+      })
+    }
 
-      if (typeof $.fancybox === 'undefined') {
-        $('head').append(`<link rel="stylesheet" type="text/css" href="${GLOBAL_CONFIG.source.fancybox.css}">`)
-        $.getScript(`${GLOBAL_CONFIG.source.fancybox.js}`, function () {
-          runFancybox($(ele))
-        })
-      } else {
+    if (typeof $.fancybox === 'undefined') {
+      $('head').append(`<link rel="stylesheet" type="text/css" href="${GLOBAL_CONFIG.source.fancybox.css}">`)
+      $.getScript(`${GLOBAL_CONFIG.source.fancybox.js}`, function () {
         runFancybox($(ele))
-      }
+      })
+    } else {
+      runFancybox($(ele))
     }
   }
 
   const addMediumZoom = () => {
     const zoom = mediumZoom(document.querySelectorAll('#article-container :not(a)>img'))
     zoom.on('open', e => {
-      const photoBg = $(document.documentElement).attr('data-theme') === 'dark' ? '#121212' : '#fff'
+      const photoBg = document.documentElement.getAttribute('data-theme') === 'dark' ? '#121212' : '#fff'
       zoom.update({
         background: photoBg
       })
@@ -288,15 +286,17 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   const jqLoadAndRun = () => {
-    const isFancybox = GLOBAL_CONFIG.lightbox === 'fancybox'
-    const $fancyboxEle = isFancybox ? document.querySelectorAll('#article-container :not(a):not(.gallery-group) > img, #article-container > img') : null
+    const $fancyboxEle = GLOBAL_CONFIG.lightbox === 'fancybox'
+      ? document.querySelectorAll('#article-container :not(a):not(.gallery-group) > img, #article-container > img')
+      : []
+    const fbLengthNoZero = $fancyboxEle.length > 0
     const $jgEle = document.querySelectorAll('#article-container .justified-gallery')
-    const jgEleLength = $jgEle.length
+    const jgLengthNoZero = $jgEle.length > 0
 
-    if (jgEleLength || $fancyboxEle !== null) {
+    if (jgLengthNoZero || fbLengthNoZero) {
       btf.isJqueryLoad(() => {
-        jgEleLength && runJustifiedGallery($jgEle)
-        isFancybox && addFancybox($fancyboxEle)
+        jgLengthNoZero && runJustifiedGallery($jgEle)
+        fbLengthNoZero && addFancybox($fancyboxEle)
       })
     }
   }
@@ -383,9 +383,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const contentMath = (docHeight > winHeight) ? (docHeight - winHeight) : (document.documentElement.scrollHeight - winHeight)
       const scrollPercent = (currentTop - headerHeight) / (contentMath)
       const scrollPercentRounded = Math.round(scrollPercent * 100)
-      const percentage = (scrollPercentRounded > 100) ? 100
-        : (scrollPercentRounded <= 0) ? 0
-          : scrollPercentRounded
+      const percentage = (scrollPercentRounded > 100) ? 100 : (scrollPercentRounded <= 0) ? 0 : scrollPercentRounded
       $cardToc.setAttribute('progress-percentage', percentage)
     }
 
@@ -473,7 +471,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const currentActive = $tocLink[currentIndex]
       currentActive.classList.add('active')
 
-      setTimeout(function () {
+      setTimeout(() => {
         autoScrollToc(currentActive)
       }, 0)
 
@@ -490,7 +488,20 @@ document.addEventListener('DOMContentLoaded', function () {
  */
   const rightSideFn = {
     switchReadMode: () => { // read-mode
-      document.body.classList.toggle('read-mode')
+      const $body = document.body
+      $body.classList.add('read-mode')
+      const newEle = document.createElement('button')
+      newEle.type = 'button'
+      newEle.className = 'fas fa-sign-out-alt exit-readmode'
+      $body.appendChild(newEle)
+
+      function clickFn () {
+        $body.classList.remove('read-mode')
+        newEle.remove()
+        newEle.removeEventListener('click', clickFn)
+      }
+
+      newEle.addEventListener('click', clickFn)
     },
     switchDarkMode: () => { // Switch Between Light And Dark Mode
       const nowMode = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light'
@@ -628,7 +639,7 @@ document.addEventListener('DOMContentLoaded', function () {
  */
   const addRuntime = () => {
     const $runtimeCount = document.getElementById('runtimeshow')
-    if ($runtimeCount !== null) {
+    if ($runtimeCount) {
       const publishDate = $runtimeCount.getAttribute('data-publishDate')
       $runtimeCount.innerText = btf.diffDate(publishDate) + ' ' + GLOBAL_CONFIG.runtime
     }
@@ -639,7 +650,7 @@ document.addEventListener('DOMContentLoaded', function () {
  */
   const addLastPushDate = () => {
     const $lastPushDateItem = document.getElementById('last-push-date')
-    if ($lastPushDateItem !== null) {
+    if ($lastPushDateItem) {
       const lastPushDate = $lastPushDateItem.getAttribute('data-lastPushDate')
       $lastPushDateItem.innerText = btf.diffDate(lastPushDate, true)
     }
@@ -687,7 +698,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
           if (!$tabItem.classList.contains('active')) {
             const $tabContent = $tabItem.parentNode.nextElementSibling
-            btf.siblings($tabItem, 'active')[0].classList.remove('active')
+            const $siblings = btf.siblings($tabItem, '.active')[0]
+            $siblings && $siblings.classList.remove('active')
             $tabItem.classList.add('active')
             const tabId = $this.getAttribute('data-href').replace('#', '')
             const childList = [...$tabContent.children]
@@ -714,7 +726,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const toggleCardCategory = function () {
     const $cardCategory = document.querySelectorAll('#aside-cat-list .card-category-list-item.parent i')
-    if ($cardCategory.length > 0) {
+    if ($cardCategory.length) {
       $cardCategory.forEach(function (item) {
         item.addEventListener('click', function (e) {
           e.preventDefault()
@@ -753,7 +765,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const addPostOutdateNotice = function () {
     const data = GLOBAL_CONFIG.noticeOutdate
-    var diffDay = btf.diffDate(GLOBAL_CONFIG_SITE.postUpdate)
+    const diffDay = btf.diffDate(GLOBAL_CONFIG_SITE.postUpdate)
     if (diffDay >= data.limitDay) {
       const ele = document.createElement('div')
       ele.className = 'post-outdate-notice'
