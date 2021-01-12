@@ -1,0 +1,447 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vim备忘录 | 昨日晴空</title><meta name="author" content="Asakiii"><meta name="copyright" content="Asakiii"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="Vim备忘单 全局  :h[elp] 关键字 - 打开关键字帮助 :sav[eas] 文件名 - 另存为 :clo[se] - 关闭当前窗口 :ter[minal] -打开终端窗口 K - 打开光标所在单词的man页面  提示**vimtutor**在终端上运行以学习第一个Vim命令。 移动光标  h - 左移光标 j - 下移光标 k - 上移光标 l - 右移光标 H - 移动到当前页面顶部">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vim备忘录">
+<meta property="og:url" content="http://blog.isk.ink/2021/01/12/Vim%E5%A4%87%E5%BF%98%E5%BD%95/index.html">
+<meta property="og:site_name" content="昨日晴空">
+<meta property="og:description" content="Vim备忘单 全局  :h[elp] 关键字 - 打开关键字帮助 :sav[eas] 文件名 - 另存为 :clo[se] - 关闭当前窗口 :ter[minal] -打开终端窗口 K - 打开光标所在单词的man页面  提示**vimtutor**在终端上运行以学习第一个Vim命令。 移动光标  h - 左移光标 j - 下移光标 k - 上移光标 l - 右移光标 H - 移动到当前页面顶部">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg">
+<meta property="article:published_time" content="2021-01-12T01:35:28.000Z">
+<meta property="article:modified_time" content="2021-01-12T01:36:16.903Z">
+<meta property="article:author" content="Asakiii">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg"><link rel="shortcut icon" href="/img/3.jpg"><link rel="canonical" href="http://blog.isk.ink/2021/01/12/Vim%E5%A4%87%E5%BF%98%E5%BD%95/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}
+
+// https://stackoverflow.com/questions/16839698/jquery-getscript-alternative-in-native-javascript
+const getScript = url => new Promise((resolve, reject) => {
+  const script = document.createElement('script')
+  script.src = url
+  script.async = true
+  script.onerror = reject
+  script.onload = script.onreadystatechange = function() {
+    const loadState = this.readyState
+    if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+    script.onload = script.onreadystatechange = null
+    resolve()
+  }
+  document.head.appendChild(script)
+})</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2021-01-12 09:36:16'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {const asideStatus = saveToLocal.get('aside-status')
+if (asideStatus !== undefined) {
+   if (asideStatus === 'hide') {
+     document.documentElement.classList.add('hide-aside')
+   } else {
+     document.documentElement.classList.remove('hide-aside')
+   }
+}})()</script><meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="昨日晴空" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" data-lazy-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200503180052.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">28</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">19</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">14</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">昨日晴空</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Vim备忘录</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-01-12T01:35:28.000Z" title="发表于 2021-01-12 09:35:28">2021-01-12</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-01-12T01:36:16.903Z" title="更新于 2021-01-12 09:36:16">2021-01-12</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p><a target="_blank" rel="noopener" href="https://vim.rtorr.com/">Vim备忘单</a></p>
+<p>全局</p>
+<ul>
+<li><strong>:h[elp]</strong> <strong>关键字</strong> - 打开关键字帮助</li>
+<li><strong>:sav[eas]</strong> <strong>文件名</strong> - 另存为</li>
+<li><strong>:clo[se]</strong> - 关闭当前窗口</li>
+<li><strong>:ter[minal]</strong> -打开终端窗口</li>
+<li><strong>K</strong> - 打开光标所在单词的man页面</li>
+</ul>
+<p><strong>提示**</strong>vimtutor**在终端上运行以学习第一个Vim命令。</p>
+<p>移动光标</p>
+<ul>
+<li><strong>h</strong> - 左移光标</li>
+<li><strong>j</strong> - 下移光标</li>
+<li><strong>k</strong> - 上移光标</li>
+<li><strong>l</strong> - 右移光标</li>
+<li><strong>H</strong> - 移动到当前页面顶部</li>
+<li><strong>M</strong> - 移动到当前页面中间</li>
+<li><strong>L</strong> - 移动到当前页面底部</li>
+<li><strong>w</strong> - 移动到下个单词开头</li>
+<li><strong>W</strong> - 移动到下个单词开头(单词含标点)</li>
+<li><strong>e</strong> - 移动到下个单词结尾</li>
+<li><strong>E</strong> - 移动到下个单词结尾(单词含标点)</li>
+<li><strong>b</strong> - 移动到上个单词开头</li>
+<li><strong>B</strong> - 移动到上个单词开头(单词含标点)</li>
+<li><strong>%</strong> - 跳转到配对的符号(默认支持的配对符号组:: ‘()’,     ‘{}’, ‘[]’ - 在vim中使用 :h matchpairs 获得更多信息)</li>
+<li><strong>0</strong> - 移动到行首</li>
+<li><strong>^</strong> - 移动到行首的非空白符</li>
+<li><strong>$</strong> - 移动到行尾</li>
+<li><strong>g_</strong> - 移动到行内最后一个非空白符</li>
+<li><strong>gg</strong> - 移动到文件第一行</li>
+<li><strong>G</strong> - 移动到文件最后一行</li>
+<li><strong>5gg</strong> or <strong>5G</strong> - 移动到第五行</li>
+<li><strong>fx</strong> - 移动到字符 x 下次出现的位置</li>
+<li><strong>tx</strong> - 移动到字符 x 下次出现的位置的前一个字符</li>
+<li><strong>Fx</strong> - 移动到字符 x 上次出现的位置</li>
+<li><strong>Tx</strong> - 移动到字符 x 上次出现的位置的后一个字符</li>
+<li><strong>;</strong> - 重复之前的f、t、F、T操作</li>
+<li><strong>,</strong> - 反向重复之前的f、t、F、T操作</li>
+<li><strong>}</strong> - 移动到下一个段落 (当编辑代码时则为函数／代码块)</li>
+<li><strong>{</strong> - 移动到上一个段落 (当编辑代码时则为函数／代码块)</li>
+<li><strong>zz</strong> - 移动屏幕使光标居中</li>
+<li><strong>Ctrl</strong> + <strong>e</strong> - 向下移动屏幕一行(保持光标不动)</li>
+<li><strong>Ctrl</strong> + <strong>y</strong> - 向上移动屏幕一行(保持光标不动)</li>
+<li><strong>Ctrl</strong> + <strong>b</strong> - 向上滚动一屏</li>
+<li><strong>Ctrl</strong> + <strong>f</strong> - 向下滚动一屏</li>
+<li><strong>Ctrl</strong> + <strong>d</strong> - 向下滚动半屏</li>
+<li><strong>Ctrl</strong> + <strong>u</strong> - 向上滚动半屏</li>
+</ul>
+<p><strong>Tip</strong> 命令前追加数字表示命令的重复次数, 比如 <strong>4j</strong> 表示向下移动四行</p>
+<p>插入模式 - 插入/追加文本</p>
+<ul>
+<li><strong>i</strong> - 从光标前开始插入字符</li>
+<li><strong>I</strong> - 从行首开始插入字符</li>
+<li><strong>a</strong> - 从光标后开始插入字符</li>
+<li><strong>A</strong> - 从行尾开始插入字符</li>
+<li><strong>o</strong> - 在当前行之下另起一行, 开始插入字符</li>
+<li><strong>O</strong> - 在当前行之上另起一行, 开始插入字符</li>
+<li><strong>ea</strong> - 从当前单词末尾开始插入</li>
+<li><strong>Ctrl</strong> + <strong>h</strong> - 在插入模式下，删除光标前的字符</li>
+<li><strong>Ctrl</strong> + <strong>w</strong> - 在插入模式下，删除光标前的单词</li>
+<li><strong>Ctrl</strong> + <strong>j</strong> - 在插入模式下，另起一行</li>
+<li><strong>Ctrl</strong> + <strong>t</strong> - 在插入模式下，向右缩进，宽度由 shiftwidth 控制</li>
+<li><strong>Ctrl</strong> + <strong>d</strong> - 在插入模式下，向左缩进，宽度由 shiftwidth 控制</li>
+<li><strong>Ctrl</strong> + <strong>n</strong> - 在插入模式下，在光标之前插入自动补全的下一个匹配项</li>
+<li><strong>Ctrl</strong> + <strong>p</strong> - 在插入模式下，在光标之前插入自动补全的上一个匹配项</li>
+<li><strong>Ctrl</strong>+ <strong>rx</strong>-插入寄存器x的内容</li>
+<li><strong>Esc</strong> - 退出插入模式</li>
+</ul>
+<p>编辑文本</p>
+<ul>
+<li><strong>r</strong> - 替换当前字符</li>
+<li><strong>J</strong> - 将下一行合并到当前行, 并在两部分文本之间插入一个空格</li>
+<li><strong>gJ</strong> - 将下一行合并到当前行, 两部分文本之间不含空格</li>
+<li><strong>gwip</strong> - 重新调整段落</li>
+<li><strong>gu</strong> -更改为小写字母</li>
+<li><strong>gU</strong> -更改为大写字母</li>
+<li><strong>cc</strong> - 将光标所在的行删除, 然后进入插入模式</li>
+<li><strong>C</strong> - 将光标处到行尾删除, 然后进入插入模式</li>
+<li><strong>c$</strong> - 将光标处到行尾删除, 然后进入插入模式</li>
+<li><strong>ciw</strong> - 将光标所在的单词删除, 然后进入插入模式</li>
+<li><strong>cw</strong> - 从光标位置开始, 修改单词</li>
+<li><strong>s</strong> - 删除当前字符, 然后进入插入模式</li>
+<li><strong>S</strong> - 清空当前行, 然后进入插入模式 (同<kbd>cc</kbd>)</li>
+<li><strong>xp</strong> - 当前字符后移</li>
+<li><strong>u</strong> - 撤销</li>
+<li><strong>U</strong> -恢复（撤消）上次更改的行</li>
+<li><strong>Ctrl</strong> + <strong>r</strong> - 重复</li>
+<li><strong>.</strong> - 再次执行上个命令</li>
+</ul>
+<p>选择文本（可视化模式）</p>
+<ul>
+<li><strong>v</strong> - 进入可视化模式, 移动光标高亮选择, 然后可以对选择的文本执行命令(比如<kbd>y</kbd>-复制)</li>
+<li><strong>V</strong> - 进入可视化模式(行粒度选择)</li>
+<li><strong>o</strong> - 切换光标到选择区开头/结尾</li>
+<li><strong>Ctrl</strong> + <strong>v</strong> - 进入可视化模式(矩阵选择)</li>
+<li><strong>O</strong> - 切换光标到选择区的角</li>
+<li><strong>aw</strong> - 选择当前单词</li>
+<li><strong>ab</strong> - 选择被 () 包裹的区域(含括号)</li>
+<li><strong>aB</strong> - 选择被 {} 包裹的区域(含花括号)</li>
+<li><strong>at</strong> - 选择被 &lt;&gt; 标签包裹的区域(含&lt;&gt;标签)</li>
+<li><strong>ib</strong> - 选择被 () 包裹的区域(不含括号)</li>
+<li><strong>iB</strong> - 选择被 {} 包裹的区域(不含花括号)</li>
+<li><strong>it</strong> - 选择被 &lt;&gt; 标签包裹的区域(不含&lt;&gt;标签)</li>
+<li><strong>Esc</strong> - 退出可视化模式</li>
+</ul>
+<p><strong>Tip</strong> 也可以使用 <strong>(</strong> 和 <strong>{</strong> 分别代替 <strong>b</strong> 和 <strong>B</strong></p>
+<p>可视化模式命令</p>
+<ul>
+<li><strong>&gt;</strong> - 向右缩进</li>
+<li><strong>&lt;</strong> - 向左缩进</li>
+<li><strong>y</strong> - 复制</li>
+<li><strong>d</strong> - 剪切</li>
+<li><strong>~</strong> - 大小写切换</li>
+<li><strong>u</strong> - 将选中文本转换为小写</li>
+<li><strong>U</strong> - 将选中文本转换为大写</li>
+</ul>
+<p>寄存器</p>
+<ul>
+<li><strong>:reg[isters]</strong> - 显示寄存器内容</li>
+<li><strong>“xy</strong> - 复制内容到寄存器 x</li>
+<li><strong>“xp</strong> - 粘贴寄存器 x 中的内容</li>
+<li><strong>“+y</strong> - 复制内容到系统剪贴板寄存器</li>
+<li><strong>“+p</strong> - 粘贴系统剪贴板寄存器的内容</li>
+</ul>
+<p><strong>Tip</strong> 寄存器被存储在 ~/.viminfo 中, 在下次重启vim时仍会加载</p>
+<p><strong>Tip</strong> 特殊寄存器：</p>
+<p> <strong>0</strong> - 上次复制<br> <strong>“</strong> - 未命名寄存器，上次复制或删除<br> <strong>%</strong> - 当前文件名<br> <strong>#</strong> - 轮换文件名<br> <strong>*** - 剪贴板内容 (X11 primary)<br> **+</strong> - 剪贴板内容 (X11 clipboard)<br> <strong>/</strong> - 上次搜索的pattern<br> <strong>:</strong> - 上次执行的命令<br> <strong>.</strong> - 上次插入的文本<br> <strong>-</strong> - 上次剪切的短于一行的文本<br> <strong>=</strong> - 表达式寄存器<br> <strong>_</strong> - 黑洞寄存器</p>
+<p>标记</p>
+<ul>
+<li><strong>:marks</strong> - 标记列表</li>
+<li><strong>ma</strong> - 设置当前位置为标记 a</li>
+<li><strong>`a</strong> - 跳转到标记 a 的位置</li>
+<li><strong>y`a</strong> - 复制当前位置到标记 a 的内容</li>
+<li><strong>`0</strong> -转到先前退出Vim的位置</li>
+<li><strong>`”</strong> -转到最后编辑此文件的位置</li>
+<li><strong>`.</strong> -转到此文件中最后更改的位置</li>
+<li><strong>``</strong> -跳到最后一跳之前的位置</li>
+<li><strong>:ju[mps]</strong> -跳跃清单</li>
+<li><strong>Ctrl</strong>+ <strong>i</strong>-跳转到跳转列表中的较新位置</li>
+<li><strong>Ctrl</strong>+ <strong>o</strong>-在跳转列表中转到较旧的位置</li>
+<li><strong>:changes</strong> -变更清单</li>
+<li><strong>g,</strong> -转到更改列表中的较新位置</li>
+<li><strong>g;</strong> -转到更改列表中的较旧位置</li>
+<li><strong>Ctrl</strong>+ <strong>]</strong>-跳至光标下方的标签</li>
+</ul>
+<p><strong>提示</strong>要跳至标记，可以使用反引号（<strong>`</strong>）或撇号（<strong>‘</strong>）。使用撇号将跳转到持有该标记的行的开头（第一个非黑色）。</p>
+<p>宏</p>
+<ul>
+<li><strong>qa</strong> - 录制宏 a</li>
+<li><strong>q</strong> - 停止录制宏</li>
+<li><strong>@a</strong> - 执行宏 a</li>
+<li><strong>@@</strong> - 重新执行上次执行的宏</li>
+</ul>
+<p>剪切, 复制, 粘贴</p>
+<ul>
+<li><strong>yy</strong> - 复制当前行</li>
+<li><strong>2yy</strong> - 复制 2 行</li>
+<li><strong>yw</strong> - 复制当前单词</li>
+<li><strong>y$</strong> - 复制, 从光标位置到行末</li>
+<li><strong>p</strong> - 在光标后粘贴</li>
+<li><strong>P</strong> - 在光标前粘贴</li>
+<li><strong>dd</strong> - 剪切当前行</li>
+<li><strong>2dd</strong> - 剪切 2 行</li>
+<li><strong>dw</strong> - 剪切当前单词</li>
+<li><strong>D</strong> - 剪切, 从光标位置到行末</li>
+<li><strong>d$</strong> - 剪切, 从光标位置到行末 (同<kbd>D</kbd>)</li>
+<li><strong>x</strong> - 剪切当前字符</li>
+</ul>
+<p>文字缩进</p>
+<ul>
+<li><strong>&gt;&gt;</strong> - 将当前行向右缩进，宽度由 shiftwidth 控制</li>
+<li><strong>&lt;&lt;</strong> - 将当前行向左缩进，宽度由 shiftwidth 控制</li>
+<li><strong>&gt;%</strong> - 向右缩进 () 或 {} 内的区域 (光标需置于括号上)</li>
+<li><strong>&gt;ib</strong> - 向右缩进 () 内的区域</li>
+<li><strong>&gt;at</strong> - 向右缩进 &lt;&gt; 标签内的区域</li>
+<li><strong>3==</strong> - 自动缩进 3 行</li>
+<li><strong>=%</strong> - 自动缩进 () 或 {} 内的区域 (光标需置于括号上)</li>
+<li><strong>=iB</strong> - 自动缩进 {} 内的区域 (光标需置于括号上)</li>
+<li><strong>gg=G</strong> - 自动缩进整个缓冲区</li>
+<li><strong>]p</strong> - 粘贴并调整缩进至当前行</li>
+</ul>
+<p>退出</p>
+<ul>
+<li><strong>:w</strong> - 保存</li>
+<li><strong>:w !sudo tee %</strong> - 使用 sudo 保存当前文件</li>
+<li><strong>:wq</strong> or <strong>:x</strong> or <strong>ZZ</strong> - 保存并退出</li>
+<li><strong>:q</strong> - 退出(修改未保存时警告)</li>
+<li><strong>:q!</strong> or <strong>ZQ</strong> - 不保存强制退出</li>
+<li><strong>:wqa</strong> - 保存所有标签页并全部退出</li>
+</ul>
+<p>查找/替换</p>
+<ul>
+<li><strong>/pattern</strong> - 查找<kbd>pattern</kbd></li>
+<li><strong>?pattern</strong> - 向上查找<kbd>pattern</kbd></li>
+<li><strong>\vpattern</strong> - <kbd>pattern</kbd> 中的非字母数字字符被视为正则表达式特殊字符 (不需转义字符)</li>
+<li><strong>n</strong> - 查找下一个</li>
+<li><strong>N</strong> - 查找上一个</li>
+<li><strong>:%s/old/new/g</strong> - 替换全部</li>
+<li><strong>:%s/old/new/gc</strong> - (逐个)替换</li>
+<li><strong>:noh[lsearch]</strong> - 移除搜索结果的高亮显示</li>
+</ul>
+<p>多文件搜索</p>
+<ul>
+<li><strong>:vim[grep] /pattern/ {<code>&#123;file&#125;</code>}</strong> - 在多个文件中搜索 <kbd>pattern</kbd></li>
+</ul>
+<p>例如 <strong>:vim[grep] /foo/ \</strong>/***</p>
+<ul>
+<li><strong>:cn[ext]</strong> - 移动至下一个</li>
+<li><strong>:cp[revious]</strong> - 移动至上一个</li>
+<li><strong>:cope[n]</strong> - 打开搜索结果列表</li>
+<li><strong>:ccl[ose]</strong> -关闭快速修复窗口</li>
+</ul>
+<p>标签</p>
+<ul>
+<li><strong>:tabnew</strong> or <strong>:tabnew {page.words.file}</strong> - 在新标签中打开文件</li>
+<li><strong>Ctrl</strong> + <strong>wT</strong> - 将窗口变成标签</li>
+<li><strong>gt</strong> or <strong>:tabn[ext]</strong> - 切换到下一个标签</li>
+<li><strong>gT</strong> or <strong>:tabp[revious]</strong> - 切换到上一个标签</li>
+<li><strong>#gt</strong> - 切换到第 <kbd>#</kbd> 个标签</li>
+<li><strong>:tabm[ove] #</strong> - 移动标签到第 <kbd>#</kbd> 位(下标从 0 开始)</li>
+<li><strong>:tabc[lose]</strong> - 关闭当前标签</li>
+<li><strong>:tabo[nly]</strong> - 关闭其他标签</li>
+<li><strong>:tabdo</strong> command - 在所有标签中执行命令 (例如 <strong>:tabdo q</strong> 关闭所有标签)</li>
+</ul>
+<p>多文件编辑</p>
+<ul>
+<li><strong>:e[dit]</strong> <strong>文件名</strong> - 新建缓冲区打开 filename</li>
+<li><strong>:bn[ext]</strong> - 切换到下个缓冲区</li>
+<li><strong>:bp[revious]</strong> - 切换到上个缓冲区</li>
+<li><strong>:bd[elete]</strong> - 关闭缓冲区</li>
+<li><strong>:b[uffer]#</strong> -通过＃进入缓冲区</li>
+<li><strong>:b[uffer] file</strong> -按文件转到缓冲区</li>
+<li><strong>:ls</strong> or <strong>:buffers</strong> - 列出所有打开的缓冲区</li>
+<li><strong>:sp[lit]</strong> <strong>文件名</strong> - 新建缓冲区打开 filename 并水平分割窗口</li>
+<li><strong>:vs[plit]</strong> <strong>文件名</strong> - 新缓冲区打开 filename 并垂直分割窗口</li>
+<li><strong>:vert[ical] ba[ll]</strong> -将所有缓冲区编辑为垂直窗口</li>
+<li><strong>:tab ba[ll]</strong> -将所有缓冲区编辑为选项卡</li>
+<li><strong>Ctrl</strong> + <strong>ws</strong> - 水平分割窗口</li>
+<li><strong>Ctrl</strong> + <strong>wv</strong> - 垂直分割窗口</li>
+<li><strong>Ctrl</strong> + <strong>ww</strong> - 在窗口间切换</li>
+<li><strong>Ctrl</strong> + <strong>wq</strong> - 关闭窗口</li>
+<li><strong>Ctrl</strong>+ <strong>wx</strong>-与下一个交换当前窗口</li>
+<li><strong>Ctrl</strong>+ <strong>w=</strong>-使所有窗口的高度和宽度相等</li>
+<li><strong>Ctrl</strong> + <strong>wh</strong> - 切换到左侧窗口</li>
+<li><strong>Ctrl</strong> + <strong>wl</strong> - 切换到右侧窗口</li>
+<li><strong>Ctrl</strong> + <strong>wj</strong> - 切换到下侧窗口</li>
+<li><strong>Ctrl</strong> + <strong>wk</strong> - 切换到上侧窗口</li>
+</ul>
+<p>差异</p>
+<ul>
+<li><strong>zf</strong> -手动定义向上折叠</li>
+<li><strong>zd</strong> -删除光标下方的折叠</li>
+<li><strong>za</strong> -在光标下方切换折叠</li>
+<li><strong>zo</strong> -在光标下方打开折叠</li>
+<li><strong>zc</strong> -光标下方折叠</li>
+<li><strong>zr</strong> -将所有折叠减少（打开）一级</li>
+<li><strong>zm</strong> -折叠更多（关闭）所有折叠一级</li>
+<li><strong>zi</strong> -切换折叠功能</li>
+<li><strong>]c</strong> -跳转到下一个更改的开始</li>
+<li><strong>[c</strong> -跳至上一个更改的开始</li>
+<li><strong>do</strong>或<strong>:diffg[et]</strong>-从其他缓冲区获取（获取）差异</li>
+<li><strong>dp</strong>或<strong>:diffpu[t]</strong>-存入差额（至其他缓冲区）</li>
+<li><strong>:diffthis</strong> -使当前窗口成为差异的一部分</li>
+<li><strong>:dif[fupdate]</strong> -更新差异</li>
+<li><strong>:diffo[ff]</strong> -关闭当前窗口的差异模式</li>
+</ul>
+<p><strong>提示</strong>折叠命令（例如<strong>za</strong>）在一级上操作。要在所有级别上操作，请使用大写字母（例如<strong>zA</strong>）。</p>
+<p><strong>提示</strong>要查看文件的差异，可以通过<strong>vimdiff</strong>在终端上运行来直接在diff模式下启动Vim 。甚至可以将其设置为<strong>git difftool</strong>。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Asakiii</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://blog.isk.ink/2021/01/12/Vim%E5%A4%87%E5%BF%98%E5%BD%95/">http://blog.isk.ink/2021/01/12/Vim%E5%A4%87%E5%BF%98%E5%BD%95/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://blog.isk.ink" target="_blank">昨日晴空</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2021/01/04/%E6%88%91%E7%9A%842020%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/"><img class="next-cover" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">我的2020年度总结</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200503180052.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Asakiii</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">28</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">19</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">14</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/yaoguang161"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Yaoguang161" target="_blank" title="Github"><i class="iconfont icon-github2"></i></a><a class="social-icon" href="https://space.bilibili.com/74335348" target="_blank" title="bilibili"><i class="iconfont icon-bilibili1"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/01/12/Vim%E5%A4%87%E5%BF%98%E5%BD%95/" title="Vim备忘录"><img data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Vim备忘录"/></a><div class="content"><a class="title" href="/2021/01/12/Vim%E5%A4%87%E5%BF%98%E5%BD%95/" title="Vim备忘录">Vim备忘录</a><time datetime="2021-01-12T01:35:28.000Z" title="发表于 2021-01-12 09:35:28">2021-01-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/04/%E6%88%91%E7%9A%842020%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/" title="我的2020年度总结"><img data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="我的2020年度总结"/></a><div class="content"><a class="title" href="/2021/01/04/%E6%88%91%E7%9A%842020%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/" title="我的2020年度总结">我的2020年度总结</a><time datetime="2021-01-04T14:51:04.000Z" title="发表于 2021-01-04 22:51:04">2021-01-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/12/14/Git%E9%85%8D%E7%BD%AESSH-Key/" title="Git配置SSH Key"><img data-lazy-src="https://image.isk.ink///image/20201214215055.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Git配置SSH Key"/></a><div class="content"><a class="title" href="/2020/12/14/Git%E9%85%8D%E7%BD%AESSH-Key/" title="Git配置SSH Key">Git配置SSH Key</a><time datetime="2020-12-14T13:35:10.000Z" title="发表于 2020-12-14 21:35:10">2020-12-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/12/14/%E6%8E%A7%E5%88%B6%E5%8F%B0%E8%BE%93%E5%87%BA%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/" title="控制台输出乱码问题"><img data-lazy-src="https://image.isk.ink///image/20201214220203.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="控制台输出乱码问题"/></a><div class="content"><a class="title" href="/2020/12/14/%E6%8E%A7%E5%88%B6%E5%8F%B0%E8%BE%93%E5%87%BA%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/" title="控制台输出乱码问题">控制台输出乱码问题</a><time datetime="2020-12-14T13:24:54.000Z" title="发表于 2020-12-14 21:24:54">2020-12-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/12/13/GUI%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="GUI编程学习笔记"><img data-lazy-src="https://image.isk.ink///image/20201214215950.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="GUI编程学习笔记"/></a><div class="content"><a class="title" href="/2020/12/13/GUI%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="GUI编程学习笔记">GUI编程学习笔记</a><time datetime="2020-12-13T07:16:31.000Z" title="发表于 2020-12-13 15:16:31">2020-12-13</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By Asakiii</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><a target="_blank" rel="noopener" href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referra"><img style="position:relative;top:-2px; " src="https://cdn.jsdelivr.net/gh/xingjiahui/CDN/又拍云_logo.png"align="absmiddle" width="59px" height="30px" /></a><span>提供加速服务</span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    let initData = {
+      el: '#vcomment',
+      appId: 'qFIskENVSPg7JWs1gDJSqmnR-MdYXbMMI',
+      appKey: 'WuCtmKECITDw2Qp3MPT4to5W',
+      placeholder: 'Please leave your footprints',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: true,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: false,
+      path: window.location.pathname,
+    }
+
+    if (true) { 
+      initData.requiredFields= ('nick,mail'.split(','))
+    }
+    
+    if (false) {
+      const otherData = false
+      initData = Object.assign(initData, otherData)
+    }
+    
+    const valine = new Valine(initData)
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="true"></script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="false" data-text="嘤嘤嘤,喵喵喵,HP-1" data-fontsize="15px" data-random="false" async="async"></script><script>((window.gitter = {}).chat = {}).options = {
+  room: '',
+};
+
+if (false) {
+  function chatBtnHide () {
+    document.getElementsByClassName('gitter-open-chat-button')[0].style.display= 'none'
+  }
+
+  function chatBtnShow () {
+    document.getElementsByClassName('gitter-open-chat-button')[0].style.display= 'block'
+  }
+}
+</script><script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async="async" defer="defer"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
