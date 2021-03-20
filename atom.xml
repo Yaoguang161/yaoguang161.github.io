@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.isk.ink/"/>
-  <updated>2021-02-04T03:15:46.162Z</updated>
+  <updated>2021-03-20T17:13:21.671Z</updated>
   <id>http://blog.isk.ink/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux下使用Clash翻墙</title>
+    <link href="http://blog.isk.ink/2021/03/20/Linux%E4%B8%8B%E4%BD%BF%E7%94%A8Clash%E7%BF%BB%E5%A2%99/"/>
+    <id>http://blog.isk.ink/2021/03/20/Linux%E4%B8%8B%E4%BD%BF%E7%94%A8Clash%E7%BF%BB%E5%A2%99/</id>
+    <published>2021-03-20T15:45:44.000Z</published>
+    <updated>2021-03-20T17:13:21.671Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>由于最近在Ubuntu下编程,但是要用到Google搜索,毕竟我是面向浏览器编程,所以解决问题全都要Google,而且进入github也需要翻墙.</p><h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>首先 我所使用的是clash小猫咪,个人觉得这个软件比较好用,虽然英文版开始有点不熟悉.</p><ol><li><p>执行 <code>cd &amp;&amp; mkdir clash</code> 在用户目录下创建 clash 文件夹。</p><p>下载适合的 Clash 二进制文件并解压重命名为 <code>clash</code></p><p>一般个人的64位电脑下载 clash-linux-amd64.tar.gz 即可。</p><p>下载clash  <a href="https://github.com/Dreamacro/clash/releases![image-20210321004350458](https://image.isk.ink///image/20210321004357.png)">https://github.com/Dreamacro/clash/releases![image-20210321004350458](https://image.isk.ink///image/20210321004357.png)</a></p></li><li><p>解压并运行它代码如下</p></li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo gunzip clash-linux-arm64-v1.4.2.gz   </span><br><span class="line">mv clash-linux-arm64-v1.4.2 clash</span><br><span class="line">chmod +x clash</span><br></pre></td></tr></table></figure><p>对以上代码解释:</p><p>​                第一行: 解压gz文件</p><p>​                第二行: 给文件改名为clash,文件名太长很麻烦</p><p>​                第三行: 给文件权限</p><ol start="3"><li>在终端 <code>cd</code> 到 Clash 二进制文件所在的目录，执行 <code>wget -O config.yml *******************************?clash=1&amp;log-level=info</code> 下载 Clash 配置文件(上面*处是商机给你的链接)<img src= "/img/loading.gif" data-lazy-src="https://image.isk.ink///image/20210321005846.png" alt="image-20210321005846119"></li></ol><p>​    此时会在clash文件下生成config.yml文件,这是配置文件</p><ol start="4"><li><p>在管理员权限下执行</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;clash -d .</span><br></pre></td></tr></table></figure><p>此时出现<img src= "/img/loading.gif" data-lazy-src="https://image.isk.ink///image/20210321010135.png" alt="image-20210321010135107"></p></li><li><p>接着使用</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm config.yaml</span><br></pre></td></tr></table></figure><p>即删除它自动生成的config.yaml配置文件</p><p>再把原来商家给你下载的config.yml文件改名为config.yaml</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv config.yml config.yaml</span><br></pre></td></tr></table></figure><p>此时只有三个文件,即clash   和config.yaml 和Country.mmdb</p><p><img src= "/img/loading.gif" data-lazy-src="https://image.isk.ink///image/20210321010534.png" alt="image-20210321010534845"></p></li><li><p>接着再在管理员权限下执行</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;clash -d .</span><br></pre></td></tr></table></figure></li></ol><p><img src= "/img/loading.gif" data-lazy-src="https://image.isk.ink///image/20210321010731.png" alt="image-20210321010731527"></p><p>如果没有警告那就成功了一半</p><ol start="7"><li><p>在系统设置里面设置网络代理,改为手动 改成下图所演示,一点不差</p><p><img src= "/img/loading.gif" data-lazy-src="https://image.isk.ink///image/20210321010819.png" alt="img"></p></li><li><p>打开浏览器,输入clash.razord.top</p><p><img src= "/img/loading.gif" data-lazy-src="https://image.isk.ink///image/20210321011042.png" alt="image-20210321011042174"></p><p>在这里可以测速,和修改节点代理.</p><ol start="9"><li>好了,登录谷歌试试吧</li><li><img src= "/img/loading.gif" data-lazy-src="https://image.isk.ink///image/20210321011234.png" alt="image-20210321011234337"></li></ol></li></ol><p>如果不想代理就把网络代理设置为”已禁用”.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;由于最近在Ubuntu下编程,但是要用到Google搜索,毕竟我是面向浏览器编程,所以解决问题全都要Google,而且进入github也需要
+      
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="http://blog.isk.ink/categories/Linux/"/>
+    
+    
+      <category term="Linxu clash" scheme="http://blog.isk.ink/tags/Linxu-clash/"/>
+    
+  </entry>
   
   <entry>
     <title>无界面启动虚拟机通过VScode远程连接</title>
@@ -507,33 +533,6 @@
     
     
       <category term="VMware" scheme="http://blog.isk.ink/tags/VMware/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>清除office历史版本密钥</title>
-    <link href="http://blog.isk.ink/2020/06/12/%E6%B8%85%E9%99%A4office%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%E5%AF%86%E9%92%A5/"/>
-    <id>http://blog.isk.ink/2020/06/12/%E6%B8%85%E9%99%A4office%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%E5%AF%86%E9%92%A5/</id>
-    <published>2020-06-12T13:24:55.000Z</published>
-    <updated>2020-06-12T14:03:35.195Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>昨天使用word时，好奇去输入了产品密钥，结果有问题，产品也没激活，导致每次使用Word或者</p><p>Excle时都会弹出激活向导。特别烦，我都把注册表删了，它居然还有。我有家庭版的office，已经激活了。但是上次输入激活密钥的那个版本的激活向导一直都在，输入了正版的密钥也没用。</p><p>采用了网上的大多解决方法，大多采用激活工具。但是我的电脑用不了就很无奈。而且大多激活工具不正规，也不能说没用，反正我的没用。而且百度流传的大多方法早就失效了。不过在我逛了一下午各个论坛后还是找到了一种更简单的方法。不用下载任何软件直接删一些东西就好，原来激活的office不会受影响。</p><h2 id="找到密钥所在位置"><a href="#找到密钥所在位置" class="headerlink" title="找到密钥所在位置"></a>找到密钥所在位置</h2><ol><li><p>开始运行命令提示符。在小娜的搜索框内输入cmd，或者win+R键输入cmd</p></li><li><p>输入cd..两次退到C盘目录下，再输入cd C:\Program Files(X86)\Microsoft Office\Office16 。注意cd 和C:...之间有个空格。每个人装Office的位置可能不一样找到你的安装位置复制粘贴过来就好</p></li><li><p>在输入：cscript OSPP.VBS /dstatus  。<strong>注意空格位置</strong></p></li><li><p>看是否会出现几个类似于KHGM9的密钥。</p></li><li><p>然后输入</p><p> cscript  ospp.vbs /unpkey:KHGM9</p><p>cscript ospp.vbs /unpkey:KHGM9</p><p>cscript ospp.vbs /unpkey:G83KT</p><p>cscript ospp.vbs /unpkey:G83KT</p><p>当然每个人的密钥都不太一样，我也忘了当时我试了几个反正都删了就对了</p></li></ol><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200612215849.png" alt=""></p><p>全删完之后基本问题就解决了。</p><p>最好还是用正版或者淘宝买的盗版。网上免费的密钥简直有毒，也不排除有些真的能用，一旦不能用，那么每次打开Word或其他office软件都会弹出软件激活向导。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;起因&quot;&gt;&lt;a href=&quot;#起因&quot; class=&quot;headerlink&quot; title=&quot;起因&quot;&gt;&lt;/a&gt;起因&lt;/h2&gt;&lt;p&gt;昨天使用word时，好奇去输入了产品密钥，结果有问题，产品也没激活，导致每次使用Word或者&lt;/p&gt;
-&lt;p&gt;Excle时都会弹出激活向导。特
-      
-    
-    </summary>
-    
-    
-      <category term="windows" scheme="http://blog.isk.ink/categories/windows/"/>
-    
-    
-      <category term="office" scheme="http://blog.isk.ink/tags/office/"/>
     
   </entry>
   
