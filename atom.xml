@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.isk.ink/"/>
-  <updated>2021-04-23T02:11:12.398Z</updated>
+  <updated>2021-05-01T12:25:48.122Z</updated>
   <id>http://blog.isk.ink/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git push超时问题解决方法</title>
+    <link href="http://blog.isk.ink/2021/05/01/git-push%E8%B6%85%E6%97%B6%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
+    <id>http://blog.isk.ink/2021/05/01/git-push%E8%B6%85%E6%97%B6%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</id>
+    <published>2021-05-01T11:13:14.000Z</published>
+    <updated>2021-05-01T12:25:48.122Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>git push经常出现443错误,上传超时.修改多次后只能当时有效,所以解决后来记录下.</p><h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><h3 id="错误"><a href="#错误" class="headerlink" title="错误"></a>错误</h3><p>今天上传要不是443错误,要不就是10054错误,10054产生原因:</p><p> 一般是因为服务的SSL证书没有经过第三方机构的签署.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fatal: unable to access &#39;https:&#x2F;&#x2F;github.com&#x2F;.......&#39;: OpenSSL SSL_read: Connection was reset, errno 10054</span><br></pre></td></tr></table></figure><p>一般解决方法是:接触ssl验证后,再次git</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.sslVerify &quot;false&quot;</span><br></pre></td></tr></table></figure><p>但是这种方法前几次还有效果,但是今天就没用了</p><p>一般和443错误轮流出现.</p><h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><p>方法一:</p><ul><li><p>如果开启vpn等翻墙工具,或者代理工具全局代理.因为代理的问题会出现上传超时等问题.比如我用的是clash,默认端口号是7890</p></li><li><p>所以在git bash命令中输出以下命令</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.proxy 127.0.0.1:7890</span><br><span class="line">git config --global http.proxy 127.0.0.1:7890</span><br></pre></td></tr></table></figure><p>如果你以前已经设置过了上述配置,则使用如下命令取消再进行配置即可:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br><span class="line">git config --global --unset http.proxy</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#查看git的http代理设置</span><br><span class="line">git config --global http.proxy</span><br><span class="line">#查看git的https代理设置</span><br><span class="line">git config --global http.proxy</span><br><span class="line">#查看git的所有配置</span><br><span class="line">git config --global -l</span><br></pre></td></tr></table></figure></li></ul><p>方法二:</p><ul><li><p>修改hosts文件,把github的ip特殊照顾</p></li><li><p>打开<a href="https://github.com.ipaddress.com/">https://github.com.ipaddress.com/</a> 记录IP Address</p></li><li><p>打开<a href="https://fastly.net.ipaddress.com/github.global.ssl.fastly.net#ipinfo记录IP">https://fastly.net.ipaddress.com/github.global.ssl.fastly.net#ipinfo记录IP</a> Address</p></li><li><p>打开<a href="https://github.com.ipaddress.com/assets-cdn.github.com记录IP">https://github.com.ipaddress.com/assets-cdn.github.com记录IP</a> Address,注意这里会有三个,全部记录</p></li><li><p>打开电脑的hosts文件添加到最后,Windows的hosts文件在<code>C:\Windows\System32\drivers\etc</code>里,使用记事本打开,添加到最后</p><p><img src= "/img/loading.gif" data-lazy-src="https://image.isk.ink///image/20210501195843.png" alt="image-20210501195836082"></p></li></ul><p>然后使用管理员权限打开Window poweShell输出ipconfig /flushdns</p><p><img src= "/img/loading.gif" data-lazy-src="https://image.isk.ink///image/20210501200119.png" alt="image-20210501200048322"></p><p>这时候一般git push就不会出现超时问题了</p><h2 id="附加"><a href="#附加" class="headerlink" title="附加"></a>附加</h2><p>实在不行就换个通道吧.别用https了。墙内墙外http,https通道不仅速度慢，也都有失败风险的。访问不到就返回空了。具体做法如下：</p><p>比如现在你的repo地址是：<br>https: //<a href="https://link.zhihu.com/?target=http%3A//github.com/xxx/xxx.github.io.git">http://github.com/xxx/xxx.github.io.git</a><br>那就把https://换成git@，如下：<br><a href="mailto:git@github.com">git@github.com</a>:xxx/xxx.github.io.git</p><p>xxx是你的github名称。</p><p>方法如下: </p><p>方法一: 通过命令直接修改远程仓库地址,</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git remote #查看所有远程仓库</span><br><span class="line">git remote  xxx #查看指定远程仓库地址,xxx是你远程仓库的地址</span><br><span class="line">git remote set-url origin xxx  #xxx是你新的远程仓库地址</span><br></pre></td></tr></table></figure><p>方法二:先删除在添加你的远程仓库</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote rm origin </span><br><span class="line">git remote rm add origin xxx ## xxx是你的远程仓库地址</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;git push经常出现443错误,上传超时.修改多次后只能当时有效,所以解决后来记录下.&lt;/p&gt;
+&lt;h2 id=&quot;正文&quot;&gt;&lt;a href=
+      
+    
+    </summary>
+    
+    
+    
+      <category term="git" scheme="http://blog.isk.ink/tags/git/"/>
+    
+  </entry>
   
   <entry>
     <title>浅谈C++ STL的容器</title>
@@ -506,30 +531,6 @@
     
     
       <category term="HTML" scheme="http://blog.isk.ink/tags/HTML/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SecureCRT 下载及使用</title>
-    <link href="http://blog.isk.ink/2020/08/30/SecureCRT-%E4%B8%8B%E8%BD%BD%E5%8F%8A%E4%BD%BF%E7%94%A8/"/>
-    <id>http://blog.isk.ink/2020/08/30/SecureCRT-%E4%B8%8B%E8%BD%BD%E5%8F%8A%E4%BD%BF%E7%94%A8/</id>
-    <published>2020-08-30T04:33:58.000Z</published>
-    <updated>2020-09-09T03:26:46.351Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="什么是SecureCRT"><a href="#什么是SecureCRT" class="headerlink" title="什么是SecureCRT?"></a>什么是SecureCRT?</h2><p>SecureCRT 是一款支持SSH1和SSH2的终端仿真程序，这个程序能够在windows系统中登陆UNIX或Linux的服务器主机并且还能进行管理设置，是一款非常强大的ssh传输软件，是用于连接运行包括Windows、UNIX和VMS的理想工具。</p><p>我个人主要用来连接我的Linux虚拟机。</p><p>SecureCRT下载</p><p>可以用我的百度云盘链接；复制这段内容后打开百度网盘手机App，操作更方便哦 链接:<a href="https://pan.baidu.com/s/1Z4AJyNzXhP6t2Yx1BLMNow">https://pan.baidu.com/s/1Z4AJyNzXhP6t2Yx1BLMNow</a> 提取码:nxgn</p><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200830131508.png" alt="image-20200830131242862"></p><p>点击程序安装，一直next，默认安装位置就行。</p><p><strong>安装完成后先别打开软件。</strong></p><h2 id="SecureCRT破解"><a href="#SecureCRT破解" class="headerlink" title="SecureCRT破解"></a>SecureCRT破解</h2><p>1.返回桌面，右击快捷键，选择打开文件位置</p><p>2.将破解机复制到文件位置（复制keygen.exe到C:\Program Files\VanDyke Software\SecureCRT)</p><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200830132045.png" alt="image-20200830132045111"></p><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200830132612.png" alt="image-20200830132612944"></p><p>当然你的界面也可能是这样，我半年前弄的忘记了一些细节。</p><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200830132727.webp" alt="img"></p><p>3.然后鼠标右键，以管理员身份运行keygen.exe，点击“Patch”，选择SecureCRT.exe可执行文件，打开，然后会提示成功。</p><p><img src= "/img/loading.gif" data-lazy-src="https://upload-images.jianshu.io/upload_images/13355955-3ff4b34be7ccb4e4.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/408/format/webp" alt="img"></p><p><img src= "/img/loading.gif" data-lazy-src="https://upload-images.jianshu.io/upload_images/13355955-49ba7889d2b46b53.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/600/format/webp" alt="img"></p><p><img src= "/img/loading.gif" data-lazy-src="https://upload-images.jianshu.io/upload_images/13355955-d50b7aaadbb663bc.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/408/format/webp" alt="img"></p><p>4、点击确定后，又会弹出一个文件选择框，选择里面的“LicenseHelper.exe”文件，打开，也会显示成功，然后在点击“确定”即可。</p><p><img src= "/img/loading.gif" data-lazy-src="https://upload-images.jianshu.io/upload_images/13355955-bc0d62fe23d348d8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/600/format/webp" alt="img"></p><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200830132838.webp" alt="img"></p><p>5.然后打开软件，点击“OK”，点击“Enter license Data”，开始注册软件。</p><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200909112031.webp" alt=""></p><p>6.然后将注册机中的“name”后面的内容复制到软件页面，点击“下一步”。</p><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200909112327.webp" alt="img"></p><p>7.然后它会提示许可注册错误，点击“Enter license Manually”。</p><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200909112414.webp" alt="img"></p><p>8.然后将注册机内的Name和Company框中内容复制到软件页面对应的位置，点击“下一步”。</p><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200909112441.webp" alt="img"></p><p>9.再将注册机内的Serialmumber和License key框中的内容复制到软件页面对应的位置，点击：“下一步”。</p><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200909112450.webp" alt="img"></p><p>10.SecureCRT破解完成，以后都可以免费使用了。</p><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200909112503.webp" alt="img"></p><p>11.勾选下面的选项，点击“ok”，进入软件。</p><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200909112635.webp" alt="img"></p><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20200909112556.webp" alt="img"></p><h2 id="SecureCRT使用"><a href="#SecureCRT使用" class="headerlink" title="SecureCRT使用"></a>SecureCRT使用</h2>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;什么是SecureCRT&quot;&gt;&lt;a href=&quot;#什么是SecureCRT&quot; class=&quot;headerlink&quot; title=&quot;什么是SecureCRT?&quot;&gt;&lt;/a&gt;什么是SecureCRT?&lt;/h2&gt;&lt;p&gt;SecureCRT 是一款支持SSH1和SSH2的终端仿
-      
-    
-    </summary>
-    
-    
-    
-      <category term="SecureCRT" scheme="http://blog.isk.ink/tags/SecureCRT/"/>
     
   </entry>
   
