@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.isk.ink/"/>
-  <updated>2021-06-26T01:24:24.903Z</updated>
+  <updated>2021-06-26T13:34:37.171Z</updated>
   <id>http://blog.isk.ink/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JAVA学习笔记(三)</title>
+    <link href="http://blog.isk.ink/2021/06/26/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%B8%89/"/>
+    <id>http://blog.isk.ink/2021/06/26/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%B8%89/</id>
+    <published>2021-06-26T13:18:26.000Z</published>
+    <updated>2021-06-26T13:34:37.171Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h1><ol><li><p>Java8中,可以为接口添加静态方法和默认方法</p><ul><li><p>静态方法: 使用 static 关键字修饰. 可以通过接口直接调用静态方法</p></li><li><p>默认方法: 使用default 关键字修饰. 可以通过实现类对象来调用</p></li></ul></li></ol><ol start="2"><li>知识点<ul><li>接口中定义的静态方法,只能通过接口来调用</li><li>通过实现类的对象,可以调用接口中的默认方法</li><li>如果实现类重写了接口中的默认方法,调用时,仍然调用的时重写以后的方法</li><li>如果子类继承的父类和实现的接口中声明了同名同参数的方法(类优先原则)  ,  那么子类在没有重写此方法的情况下,默认调用的是父类中的同名同参数的方法</li></ul></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;接口&quot;&gt;&lt;a href=&quot;#接口&quot; class=&quot;headerlink&quot; title=&quot;接口&quot;&gt;&lt;/a&gt;接口&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Java8中,可以为接口添加静态方法和默认方法&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;静态方法: 使用 static 关键字修饰
+      
+    
+    </summary>
+    
+    
+    
+      <category term="JAVA" scheme="http://blog.isk.ink/tags/JAVA/"/>
+    
+  </entry>
   
   <entry>
     <title>JAVA学习笔记(二)</title>
@@ -490,32 +517,6 @@
     
     
       <category term="C/C++" scheme="http://blog.isk.ink/tags/C-C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>前端基础（二）</title>
-    <link href="http://blog.isk.ink/2020/10/19/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
-    <id>http://blog.isk.ink/2020/10/19/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/</id>
-    <published>2020-10-19T10:35:27.000Z</published>
-    <updated>2021-02-04T03:16:02.135Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="CSS基础"><a href="#CSS基础" class="headerlink" title="CSS基础"></a>CSS基础</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>CSS练习1<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">    p&#123;</span><br><span class="line">        color: green;</span><br><span class="line">        font-size: 50px;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>这里的字是绿色的<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    </span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure><p>外部样式表：</p><p>​                可以将CSS样式编写到一个外部的CSS文件中，通过另一个link标签来引入外部的CSS文件</p><p>​                   想使用这些样式的网页都可以对其进行复用 </p><p>​                        将样式编写到外部的CSS文件中，可以提高浏览器的缓存机制。</p><p>​                           -从而加快网页的加载速度，提高用户的体验。</p><p>  格式：</p>  <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;./style.css&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure><h3 id="CSS语法"><a href="#CSS语法" class="headerlink" title="CSS语法"></a>CSS语法</h3><h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><p>/*</p><p>这是CSS的注释，不同于HTML</p><p>  */    </p><h3 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h3><p>选择器  声明块</p><p>选择器 ，通过选择可以选中页面中的指定元素</p><p>   比如P的作用就是选中页面中的所有P元素</p><p>声明块 ，通过声明块来指定要为元素设置的样式</p><p>​              声明块有一个一个的声明组成</p><p>​              声明是一个名值对结构</p><p>​                                   一个样式名对应有个样式值，名和值之间以：连接欸，以；结尾</p><h3 id="常用选择器"><a href="#常用选择器" class="headerlink" title="常用选择器"></a>常用选择器</h3><h4 id="元素选择器"><a href="#元素选择器" class="headerlink" title="元素选择器"></a>元素选择器</h4><p>​            作用：根据标签名来选中指定的元素</p><p>​              语法： 标签名</p><p>​                例子：p{}    h1{}   div{}</p> <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">h1</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: green; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="id选择器"><a href="#id选择器" class="headerlink" title="id选择器"></a>id选择器</h4><p>​             作用：根据元素的id属性值选中一个元素,id不能重复</p><p>​              语法：#id属性值{}</p><p>​               例子 ：#box{}   #red{}</p><p>引用方法</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#red&#123;</span><br><span class="line">  color: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">&quot;red&quot;</span>&gt;</span></span><br><span class="line">    </span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure><h4 id="类选择器"><a href="#类选择器" class="headerlink" title="类选择器"></a>类选择器</h4><p>class是一个标签的属性,他和id类似，不同的是class可以重复使用，</p><p>可以通过class属性来为元素分组,</p><p>可以为一个元素指定多个class属性。</p><p>作用：根据元素的class属性值选中一组元素</p><p>语法：  .class属性值</p><p>引用方法</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.blue</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: blue;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.abc</span>&#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">20px</span>;</span><br><span class="line">&#125;</span><br><span class="line">&lt;p class=&quot;blue abc&quot;&gt;这里是蓝色&lt;/p&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure><h4 id="通配选择器"><a href="#通配选择器" class="headerlink" title="通配选择器"></a>通配选择器</h4><p>有多少选多少,页面中所有元素全部选用</p><p>作用: 选中页面中的所有元素</p><p> 语法：*</p><p>不用引，直接全部默认使用</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">*&#123;</span><br><span class="line">   color: &quot;red&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="复合选择器"><a href="#复合选择器" class="headerlink" title="复合选择器"></a>复合选择器</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="selector-tag">style</span>&gt;</span><br><span class="line"><span class="selector-class">.red</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">div</span><span class="selector-class">.red</span>&#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">30px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.a</span><span class="selector-class">.b</span><span class="selector-class">.c</span>&#123;</span><br><span class="line">   <span class="attribute">color</span>: blue;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">h1</span>,<span class="selector-tag">span</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: green;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/<span class="selector-tag">style</span>&gt;</span><br><span class="line">&lt;<span class="selector-tag">body</span>&gt;</span><br><span class="line">   &lt;div class=&quot;red&quot;&gt;我是div&lt;/div&gt;</span><br><span class="line">   &lt;p class=&quot;red&quot;&gt;我是p元素&lt;/p&gt;</span><br><span class="line">   &lt;div class=&quot;red2 a b c&quot;&gt;我是div2&lt;/div&gt;</span><br><span class="line">   &lt;<span class="selector-tag">h1</span>&gt;标题&lt;/<span class="selector-tag">h1</span>&gt;</span><br><span class="line">   &lt;<span class="selector-tag">span</span>&gt;哈哈&lt;/<span class="selector-tag">span</span>&gt;</span><br><span class="line">&lt;/<span class="selector-tag">body</span>&gt;</span><br></pre></td></tr></table></figure><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Yaoguang161/image/image/20201021162902.png" alt="image-20201021162902847"></p><h4 id="关系选择器"><a href="#关系选择器" class="headerlink" title="关系选择器"></a>关系选择器</h4><h5 id="子元素选择器"><a href="#子元素选择器" class="headerlink" title="子元素选择器"></a>子元素选择器</h5><p>​            作用：选择指定父元素的指定子元素</p><p>​            语法： 父元素  &gt;  子元素</p><p>​    </p><h5 id="后代元素选择器"><a href="#后代元素选择器" class="headerlink" title="后代元素选择器"></a>后代元素选择器</h5><p>​             作用：选定指定元素内的指定后代元素</p><p>​             语法： 祖先  后代</p><p>  选择下一个兄弟:</p><p>​              语法：前一个 + 后一个</p><p>选择下边所有的兄弟：</p><p>​              语法：兄 + 弟</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;CSS基础&quot;&gt;&lt;a href=&quot;#CSS基础&quot; class=&quot;headerlink&quot; title=&quot;CSS基础&quot;&gt;&lt;/a&gt;CSS基础&lt;/h2&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;
-      
-    
-    </summary>
-    
-    
-      <category term="CSS" scheme="http://blog.isk.ink/categories/CSS/"/>
-    
-    
-      <category term="CSS" scheme="http://blog.isk.ink/tags/CSS/"/>
     
   </entry>
   
