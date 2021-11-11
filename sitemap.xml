@@ -410,14 +410,14 @@
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/tags/VMware/</loc>
+    <loc>http://blog.isk.ink/tags/SecureCRT/</loc>
     <lastmod>2021-11-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/tags/SecureCRT/</loc>
+    <loc>http://blog.isk.ink/tags/VMware/</loc>
     <lastmod>2021-11-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -494,13 +494,6 @@
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/tags/VS-code-Linux/</loc>
-    <lastmod>2021-11-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.isk.ink/tags/%E6%95%88%E7%8E%87/</loc>
     <lastmod>2021-11-11</lastmod>
     <changefreq>daily</changefreq>
@@ -509,6 +502,13 @@
   
   <url>
     <loc>http://blog.isk.ink/tags/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2021-11-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/tags/VS-code-Linux/</loc>
     <lastmod>2021-11-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
