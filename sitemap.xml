@@ -417,13 +417,6 @@
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/tags/Vim/</loc>
-    <lastmod>2021-11-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.isk.ink/tags/VMware/</loc>
     <lastmod>2021-11-26</lastmod>
     <changefreq>daily</changefreq>
@@ -431,7 +424,7 @@
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/tags/Ubuntu/</loc>
+    <loc>http://blog.isk.ink/tags/Vim/</loc>
     <lastmod>2021-11-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -445,14 +438,14 @@
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/tags/XML/</loc>
+    <loc>http://blog.isk.ink/tags/Ubuntu/</loc>
     <lastmod>2021-11-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/</loc>
+    <loc>http://blog.isk.ink/tags/XML/</loc>
     <lastmod>2021-11-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -466,7 +459,7 @@
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/tags/HTML/</loc>
+    <loc>http://blog.isk.ink/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/</loc>
     <lastmod>2021-11-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -480,7 +473,7 @@
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/tags/%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>http://blog.isk.ink/tags/HTML/</loc>
     <lastmod>2021-11-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -488,6 +481,13 @@
   
   <url>
     <loc>http://blog.isk.ink/tags/CLion/</loc>
+    <lastmod>2021-11-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/tags/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2021-11-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -566,14 +566,14 @@
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/categories/%E5%8F%8C%E7%B3%BB%E7%BB%9F/</loc>
+    <loc>http://blog.isk.ink/categories/VScode/</loc>
     <lastmod>2021-11-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/categories/VScode/</loc>
+    <loc>http://blog.isk.ink/categories/%E5%8F%8C%E7%B3%BB%E7%BB%9F/</loc>
     <lastmod>2021-11-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -587,13 +587,6 @@
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/categories/HTML/</loc>
-    <lastmod>2021-11-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.isk.ink/categories/CSS/</loc>
     <lastmod>2021-11-26</lastmod>
     <changefreq>daily</changefreq>
@@ -601,7 +594,7 @@
   </url>
   
   <url>
-    <loc>http://blog.isk.ink/categories/%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>http://blog.isk.ink/categories/HTML/</loc>
     <lastmod>2021-11-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -609,6 +602,13 @@
   
   <url>
     <loc>http://blog.isk.ink/categories/CLion/</loc>
+    <lastmod>2021-11-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.isk.ink/categories/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2021-11-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
